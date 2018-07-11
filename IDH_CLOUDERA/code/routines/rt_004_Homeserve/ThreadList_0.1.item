@@ -1,0 +1,238 @@
+package routines;
+
+import java.util.Date;
+import routines.PoolList;
+
+
+
+public class ThreadList {
+
+	private long id;
+	private PoolList poolList;
+	private String recordId;
+	private int FileID;
+	private Date eventMoment; 
+	private int EntityID;
+	private int FileTypeID;
+	private int SeqID;
+	private int EntityFileTypeID;
+	private String EntityName;
+	private int TargetEntityFiletypeID;
+	private String Fileformat;
+	private String SourceFilePath;
+	private String FileDirection;
+	private String EntityFileTypeIDString;
+	private int ChunkID;
+	private int OutFileID;
+	private String NextStep;
+	private String TargetFileName;
+	
+	private Boolean active;
+	private int cycle;
+
+	public ThreadList(long id, PoolList poolList, String recordId, 
+			Boolean active, int cycle,Date eventMoment,int EntityID,int FileTypeID,int SeqID,int EntityFileTypeID, int FileID, 
+			String EntityName, int TargetEntityFiletypeID, String Fileformat, String SourceFilePath, String FileDirection, 
+			String EntityFileTypeIDString, int ChunkID, int OutFileID, String NextStep, String TargetFileName) {
+		this.id = id;
+		this.poolList = poolList;
+		this.recordId = recordId;
+		this.active = active;
+		this.cycle = cycle;
+		this.eventMoment = eventMoment;
+		this.EntityID = EntityID;
+		this.FileTypeID = FileTypeID;
+		this.SeqID = SeqID;
+		this.EntityFileTypeID= EntityFileTypeID;
+		this.FileID = FileID;
+		this.EntityName = EntityName;
+		this.TargetEntityFiletypeID = TargetEntityFiletypeID;
+		this.Fileformat = Fileformat;
+		this.SourceFilePath = SourceFilePath;
+		this.FileDirection = FileDirection;
+		this.EntityFileTypeIDString = EntityFileTypeIDString;
+		this.ChunkID = ChunkID;
+		this.OutFileID=OutFileID;
+		this.NextStep = NextStep;
+		this.TargetFileName=TargetFileName;
+		
+	}
+
+	public ThreadList() {
+
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public PoolList getPoolList() {
+		return poolList;
+	}
+
+	public void setPoolList(PoolList poolList) {
+		this.poolList = poolList;
+	}
+
+	public String getRecordId() {
+		return recordId;
+	}
+
+	public void setRecordId(String recordId) {
+		this.recordId = recordId;
+	}
+
+	public Boolean getActive() {
+		return active;
+	}
+
+	public void setActive(Boolean active) {
+		this.active = active;
+	}
+
+	public int getCycle() {
+		return cycle;
+	}
+
+	public void setCycle(int cycle) {
+		this.cycle = cycle;
+	}
+
+	public String toString(){
+		return this.id + "|" + this.poolList.getId() + "|" + this.poolList.getPoolname() + "|" + this.recordId + "|" + this.active + "|" + this.cycle;
+	}
+
+	public void setEventMoment(Date eventMoment) {
+		this.eventMoment = eventMoment;
+	}
+
+	public Date getEventMoment() {
+		return eventMoment;
+	}
+
+
+
+	public void setFileTypeID(int fileTypeID) {
+		FileTypeID = fileTypeID;
+	}
+
+	public int getFileTypeID() {
+		return FileTypeID;
+	}
+
+	public void setSeqID(int seqID) {
+		SeqID = seqID;
+	}
+
+	public int getSeqID() {
+		return SeqID;
+	}
+
+	public void setEntityFileTypeID(int entityFileTypeID) {
+		EntityFileTypeID = entityFileTypeID;
+	}
+
+	public int getEntityFileTypeID() {
+		return EntityFileTypeID;
+	}
+
+	public void setFileID(int fileID) {
+		FileID = fileID;
+	}
+
+	public int getFileID() {
+		return FileID;
+	}
+
+	public void setEntityID(int entityID) {
+		EntityID = entityID;
+	}
+
+	public int getEntityID() {
+		return EntityID;
+	}
+
+	public void setSourceFilePath(String sourceFilePath) {
+		SourceFilePath = sourceFilePath;
+	}
+
+	public String getSourceFilePath() {
+		return SourceFilePath;
+	}
+
+	public void setEntityName(String entityName) {
+		EntityName = entityName;
+	}
+
+	public String getEntityName() {
+		return EntityName;
+	}
+
+	public void setTargetEntityFiletypeID(int targetEntityFiletypeID) {
+		TargetEntityFiletypeID = targetEntityFiletypeID;
+	}
+
+	public int getTargetEntityFiletypeID() {
+		return TargetEntityFiletypeID;
+	}
+
+	public void setFileformat(String fileformat) {
+		Fileformat = fileformat;
+	}
+
+	public String getFileformat() {
+		return Fileformat;
+	}
+
+	public void setFileDirection(String fileDirection) {
+		FileDirection = fileDirection;
+	}
+
+	public String getFileDirection() {
+		return FileDirection;
+	}
+
+	public void setEntityFileTypeIDString(String entityFileTypeIDString) {
+		EntityFileTypeIDString = entityFileTypeIDString;
+	}
+
+	public String getEntityFileTypeIDString() {
+		return EntityFileTypeIDString;
+	}
+
+	public void setChunkID(int chunkID) {
+		ChunkID = chunkID;
+	}
+
+	public int getChunkID() {
+		return ChunkID;
+	}
+
+	public void setOutFileID(int outFileID) {
+		OutFileID = outFileID;
+	}
+
+	public int getOutFileID() {
+		return OutFileID;
+	}
+
+	public void setNextStep(String nextStep) {
+		NextStep = nextStep;
+	}
+
+	public String getNextStep() {
+		return NextStep;
+	}
+
+	public void setTargetFileName(String targetFileName) {
+		TargetFileName = targetFileName;
+	}
+
+	public String getTargetFileName() {
+		return TargetFileName;
+	}
+}
