@@ -52,28 +52,28 @@
     <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="true"/>
     <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="tMSSqlInput"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value=""/>
-    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="tMysqlInput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="MYSQL_5"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;jdbc:mysql://artha.cloudera.com:3306/?noDatetimeStringSync=true&quot;"/>
     <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT"/>
-    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;usfl04opd30v&quot;"/>
-    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="context.MSSql_ContextAndLogs_Port"/>
-    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="context.MSSql_ContextAndLogs_Database"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;org.gjt.mm.mysql.Driver&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;artha.cloudera.com&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;contextandlogs&quot;"/>
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="context.MSSql_ContextAndLogs_AdditionalParams"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="context.MSSql_ContextAndLogs_Schema"/>
-    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="context.MSSql_ContextAndLogs_Login"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="knFOmNDafrRWXm3pm1h+Jw=="/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;developer&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="8W5jc9V0my7w7hbPfczi+w=="/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
-    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;ImplicitContext&quot;"/>
-    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;TalendProject = '&quot;+projectName + &quot;'&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;ImplicitContextTable&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
     <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning"/>
     <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
     <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
-    <elementParameter field="CHECK" name="DISABLE_ERROR" value="true"/>
-    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true"/>
-    <elementParameter field="CHECK" name="DISABLE_INFO" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false"/>
     <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
     <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
@@ -118,6 +118,11 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" value=""/>
     <elementParameter field="TEXT" name="FOOTER_CODE" value=""/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value=""/>
+    <elementParameter field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICT_DEFAULT_PROJECTSETTING" value="true"/>
+    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE_IMPLICIT_CONTEXT" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="_MIw3EIBzEeijGKVo_WCcqQ"/>
     <routinesParameter id="_yk1b0Lk5EeWqE5m-A6JIbA" name="DQTechnical"/>
     <routinesParameter id="_SB2KALjyEeWJhoN14qHlUQ" name="DataOperation"/>
     <routinesParameter id="_ylne8Lk5EeWqE5m-A6JIbA" name="DataQuality"/>
@@ -5344,13 +5349,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;0;0"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_52ad1e67-4033-4e8b-a270-9a692cd964e0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ZnfBqb3H//dmAC2QY3OPpndN3aZz0VXtvOdGDdANSxDxryhCszBOd0+wI8GYm3TO0qSUezfC1OYe
-yCvBTin4Vw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6417c092-fe2e-489f-addf-fd522a0d27e9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Xw+z1vTZKAKgvSA2maegeQRVJerk2JOCRrPYVn4X0SiEg2xljTUa2DptykcltQ8XA6r13q1N4oXF
-AkUIvnE2Nw==</DigestValue></Reference></SignedInfo><SignatureValue>Tn6/2WQqatEeh5ObduFO1hLLvekA1pvl8PVSWZoUtJ0XwqbKDtlDlsqYz8CgGays7a99tV1jKFsj
-gWVy60dVL+srTzkWTsru2qkWiVawpZggOC6aTkllcvqo0bcwCdLLltuNfNA1EyI1KyJwtkIq+XtQ
-W8ExFt18aeplS/oxyXIxlMNU1PRLRZF4IGlZWmTPLqVBqIboeHjHiI12d0AMacD14CNtNUuM2DUn
-9reHT93eQNhw5H+0M3Ti1f5WOR2oUU1Ib/nM3GE+TFxo/RR/o2pbKhPZfNrviB8W6hGWITJ3eg5x
-1h+ibHqt1QhvySfrVw7msVr2rR7//r989UJ4ag==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_27d34d8b-220a-48d8-8965-fe8ac0257109"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pyLx5EjfWiJbtX+weH1JgMGzfsZDYoMiol5FkUuvhB8IxEGWmu9hJ/A1QUhlu+yS3BT4hT01lMUn
+gSw7UAwaiA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4abfc0d8-d293-4ef9-a4f0-74013bfac685"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7kSsOx5Hgx583h7HtNtK1n/ynyR7sc0Hn332vlSHAL03yh7mDeXGwrKJad76W07MoM3e4wxZR6vH
+JyEUJoLdSA==</DigestValue></Reference></SignedInfo><SignatureValue>FSdOMGAmwz9W4gHA99E+KEmXHYEl95UBY/LRGGSDc1n7QkmBQT+mC6+bpfqe/09VT6H/gp82iidd
+So/DF/3DIEFc4iySxwONpv5QeBhuGKRhPO7oqxQqLk7LZf2QR988sD0CuFNA+da0PR9CvZBjNZym
+EyeFuOAa8E7DRVdX6IOJy5Jfz+u9FihyZUmU0aZvL9RBWKHhiOiuTzCSkWnRSDOtrmyR9zR9nN7t
+vRdwhbaRC0A1fLkaObGpwy2UEv4r97bXLcAmYhQGTbP+SqxSjnTVOTEmv85y+lvuOzc7WqnOzL3m
+1Zf5YBnDHWU3QGtVtqINsyVPuaEUkCeoIfGRxA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -5374,4 +5379,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6417c092-fe2e-489f-addf-fd522a0d27e9" Target="#_52ad1e67-4033-4e8b-a270-9a692cd964e0"><Timestamp>2018-07-11 18:06:28</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4abfc0d8-d293-4ef9-a4f0-74013bfac685" Target="#_27d34d8b-220a-48d8-8965-fe8ac0257109"><Timestamp>2018-07-12 19:23:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
