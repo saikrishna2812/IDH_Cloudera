@@ -22,6 +22,12 @@
     <contextParameter comment="" name="MySql_IngestHub_Password" prompt="MySql_IngestHub_Password?" promptNeeded="false" repositoryContextId="_4hUXUIYNEeilGbUcHxhIag" type="id_String" value=""/>
     <contextParameter comment="" name="MySql_IngestHub_Port" prompt="MySql_IngestHub_Port?" promptNeeded="false" repositoryContextId="_4hUXUIYNEeilGbUcHxhIag" type="id_String" value=""/>
     <contextParameter comment="" name="MySql_IngestHub_Server" prompt="MySql_IngestHub_Server?" promptNeeded="false" repositoryContextId="_4hUXUIYNEeilGbUcHxhIag" type="id_String" value=""/>
+    <contextParameter comment="" name="mysql1_Database" prompt="mysql1_Database?" promptNeeded="false" repositoryContextId="_InOC4IYZEeilGbUcHxhIag" type="id_String" value="idh_ffmt"/>
+    <contextParameter comment="" name="mysql1_Password" prompt="mysql1_Password?" promptNeeded="false" repositoryContextId="_InOC4IYZEeilGbUcHxhIag" type="id_Password" value="dflutfhkipwQWUsnsoJnfg=="/>
+    <contextParameter comment="" name="mysql1_AdditionalParams" prompt="mysql1_AdditionalParams?" promptNeeded="false" repositoryContextId="_InOC4IYZEeilGbUcHxhIag" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="mysql1_Server" prompt="mysql1_Server?" promptNeeded="false" repositoryContextId="_InOC4IYZEeilGbUcHxhIag" type="id_String" value="10.0.0.25"/>
+    <contextParameter comment="" name="mysql1_Login" prompt="mysql1_Login?" promptNeeded="false" repositoryContextId="_InOC4IYZEeilGbUcHxhIag" type="id_String" value="developer"/>
+    <contextParameter comment="" name="mysql1_Port" prompt="mysql1_Port?" promptNeeded="false" repositoryContextId="_InOC4IYZEeilGbUcHxhIag" type="id_String" value="3306"/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="256"/>
@@ -45,33 +51,33 @@
     <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
     <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
     <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
-    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
-    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
-    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="true"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="true"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="true"/>
     <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value="tMSSqlInput"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
-    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="tMysqlInput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="MYSQL_5"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;jdbc:mysql://artha.cloudera.com:3306/?noDatetimeStringSync=true&quot;"/>
     <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
-    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;usfl04opd30v&quot;"/>
-    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="context.MSSql_ContextAndLogs_Port"/>
-    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="context.MSSql_ContextAndLogs_Database"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;org.gjt.mm.mysql.Driver&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;artha.cloudera.com&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;contextandlogs&quot;"/>
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="context.MSSql_ContextAndLogs_AdditionalParams"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="context.MSSql_ContextAndLogs_Schema"/>
-    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="context.MSSql_ContextAndLogs_Login"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="knFOmNDafrRWXm3pm1h+Jw=="/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;developer&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="8W5jc9V0my7w7hbPfczi+w=="/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;ImplicitContext&quot;"/>
-    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;TalendProject = '&quot;+projectName + &quot;'&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
-    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
-    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
-    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="true"/>
-    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="true"/>
-    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="true"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;ImplicitContextTable&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false"/>
     <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
@@ -391,13 +397,13 @@
   <node componentName="tMysqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-32" posY="-416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
-    <elementParameter field="TEXT" name="HOST" value="context.MySql_IngestHub_Server"/>
-    <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;10.0.0.36&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.MySql_IngestHub_Database"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="context.MySql_IngestHub_AdditionalParams"/>
-    <elementParameter field="TEXT" name="USER" value="context.MySql_IngestHub_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudWIz9BUrxd8cxmYEPoOWHJV5Qct/e11RgUSUcb1h4DpQ=="/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;IDH_FFMD&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value=""/>
+    <elementParameter field="TEXT" name="USER" value="&quot;Developer&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8W5jc9V0my7w7hbPfczi+w=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
@@ -552,13 +558,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_18f0ea3b-f956-4fa6-8383-b1c8d56d9999"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>exm5PgfGr/hLTkhXpczXCqWOQqfrU4TXrATCCKOXT3mSZDAIlDQ3CEr88LmmDLNzezNxwfDA9RBT
-hqFSS0HuxA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_59e8695e-1ca4-4f6d-ac81-ed75ba047997"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Vh31ooqxnrjNG6N1jKbsJHAAJFtwGUgbaNDHKlCkICZBNnnWjhJ8ar1oFYI/T913v1bmwie52qtk
-7feDzH1t1Q==</DigestValue></Reference></SignedInfo><SignatureValue>2+Vplz1kzSVdG6hIDcCEJjBtfERZt1o5KgwM/uOFlK5LEZGrvbhEoLivaR1JpDiXmkQpal3PKH3j
-Wduco74gbzKuzpHfjZeZdqi0khb3Xm32Rk5Uppv792EWA+5koNDwOV6nHsiy++nkY7FrfBzv31HN
-+iou6t974Mu3CKSZFUgaqXFzVH31VVYQZZDDFJgIDecox4mAAMXnQL8vmeJZDMsrxzJRzM9akIl3
-WK3Wc0K+E7GNl8l5YRUDPqlBvhj+6mzgSFQ/PV3NP6bFVz0Zz/8sGCwn3g8IUvMIUjV+sUgNjSlf
-f9PwKF3N7Hxiu8XDGDUu7K+6dreyUUcRMSnFaw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_069f6a33-1c6d-4c32-884b-bf5f25ba5bfc"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ISipiFcr5xPUKE4tO0lQsv2yATbTsTdkxGWd6TmotgmaqFqq7vygpXodnMY/mjqNcSwC2hht9gl7
+EBK3swZXQA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_431a70b3-d7ab-44d3-baa8-7c0e37138e25"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NZgnqrh5zLuETBjioAW7v3F+/JfiQY+rx7JmoTx0e6f6o03vyy73y9JlupPFYpnX2FcxCt33MZ3d
+XJwMB81UXA==</DigestValue></Reference></SignedInfo><SignatureValue>kbQMtDg5IOw2kf9qW5TyL7BSw2fHhlnqHB40LhW2kDG0CgZRU8W1N/xCGUs69ZA6ID7PCzz0P73q
+NDGJTJr/f16F/AwqzXsEOXVzgwTFC2yKJEamRpFJXc6oIAEkZr/RwZ2B8AVGDIkFppwTRrWyleV4
+NeCLDHbEfpjAoeHo2GZ2OraxBOCn8q+cMd+3LmSgppIU/JYxxOvvhEzYIJa/VcFGDWu6jl0yEQy4
+rwZm+zVPTwGjHu/tEPJq9mq3PZSS4UVheqmFRoDAdB1ucVx1bgaBx4mCusg8rn0wIqpNoIYmYbzB
+ClWwP096yRgXW72OJV6Z5oG3Rsx7Q7rraiIMdg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -582,4 +588,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_59e8695e-1ca4-4f6d-ac81-ed75ba047997" Target="#_18f0ea3b-f956-4fa6-8383-b1c8d56d9999"><Timestamp>2018-07-12 21:38:01</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_431a70b3-d7ab-44d3-baa8-7c0e37138e25" Target="#_069f6a33-1c6d-4c32-884b-bf5f25ba5bfc"><Timestamp>2018-07-12 21:42:41</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
