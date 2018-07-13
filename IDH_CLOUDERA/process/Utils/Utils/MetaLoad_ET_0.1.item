@@ -208,7 +208,7 @@
       <column comment="" defaultValue="" key="false" length="10" name="EntityTypeID" nullable="false" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables activateCondensedTool="true" name="Load" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="EntityType_Input.EntityTypeID " name="EntityTypeID" type="id_Integer"/>
@@ -482,7 +482,7 @@
     <metadata connector="FLOW" name="tDie_4"/>
   </node>
   <node componentName="tMysqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="-544">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_2"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="TEXT" name="HOST" value="context.MySql_IngestHub_Server"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
@@ -499,7 +499,6 @@
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="MySQL_IngestHub"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <connection connectorName="FLOW" label="EntityType_Input" lineStyle="0" metaname="tFileInputExcel_4" offsetLabelX="-1" offsetLabelY="0" source="tFileInputExcel_4" target="tMap_1">
@@ -551,7 +550,7 @@
   <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tDBOutput_1" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_1" target="tSetGlobalVar_4">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentError3"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSetGlobalVar_1" offsetLabelX="2" offsetLabelY="-23" source="tSetGlobalVar_1" target="tDBConnection_1">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSetGlobalVar_1" offsetLabelX="2" offsetLabelY="-23" source="tSetGlobalVar_1" target="tDBConnection_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSetGlobalVar_2" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_2" target="tDie_1">
@@ -587,11 +586,11 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSetGlobalVar_6" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_6" target="tDie_4">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk10"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tFileInputExcel_4">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
-  </connection>
-  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tDBConnection_1" offsetLabelX="-15" offsetLabelY="-1" source="tDBConnection_1" target="tSetGlobalVar_2">
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tDBConnection_2" offsetLabelX="-15" offsetLabelY="-1" source="tDBConnection_2" target="tSetGlobalVar_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentError1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_2" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_2" target="tFileInputExcel_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
   </connection>
   <note opaque="true" posX="-160" posY="-896" sizeHeight="64" sizeWidth="929" text="This process reads the data from  &quot;EntityType&quot;  sheet and loads the data that was not present in  &quot;EntityType&quot;  database table by taking it as lookup"/>
   <subjob>
@@ -701,18 +700,18 @@
   </subjob>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_2"/>
     <elementParameter field="TEXT" name="SUBJOB_TITLE" value="MetaStore Connection"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c04996b2-0767-49f4-bb63-7ad8c18c47dd"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>y+9jLabvJeLIJX1eIrwQMGRvw0m9czlPJRkZBITxqWbi6bOt+ldV7BTcdN5zYBFkdark46kIyx/u
-FZ3v8/yU7g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4c8cb2ea-a8d2-4d9b-992c-b21df9b5a9b5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ZuY7CKOsIBES4g6ubeIFkjDQR3FiUQ+e7ZLCIde23p7NTr0nJ8avcycK57Wg1HPz5BaAi2KUb5Bu
-9V2tVvmSjw==</DigestValue></Reference></SignedInfo><SignatureValue>BGl3ebacUSttlOEkxQOMaW0IXYZSJ1ELByMCCkoa1Tx0ZsCdfCTbL2I0OgK6WWzF/KmSeTRufWEe
-7UTcxHUW0/hZFEOMnc+wToBplJse9T6QwzlqnFKnlkw1VQcl4D0DEFP7+uVaWPgGf6Hovs/lfwB4
-AezbWtDragyZzWUuRNuO9TTMDxRbfR7ClZgDXhaJsvDWAb3d8EGHsKzkBGv/zQdi1H9HI+iLA2H7
-8Q6fN05+8ukoVu4smfaMv8aOHPRFqw11tjnld/AOaMTsj3CdXsNlQ8rS7EPEtqye8VYC9XMPIDCv
-m8CSMFsp5+QTFSDfuTDA9R9X0USCNwMy1ON1QA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5f838506-4961-434c-b258-4435052b5296"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rlp4lyU0DTbP1WeIbapafUCnohAEndJQ6ZoQ1IuhHVTtZxrqRZ82eu90Do3P9wYRoczHHx8SMsoQ
+NgXxP8KGYg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6725f5e7-e947-4da9-8099-e85e5b166256"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>220yLNKKZZfohYowaFCEIPCXZJpwdv09S61YbiZWf4qi4Cnv3fPJ4+u0FEZt+Aipm9hpxiGRYa7B
+Vc7065pnwQ==</DigestValue></Reference></SignedInfo><SignatureValue>uNg1sX44jWJI0iYz9SD63yhyu5vw1c6ZiARIZi7C+L/HWJP5Oe9kDjescSJQyFWykiqj7qeg1UUK
+XW4VPAfurb0siVbLdiL3o+dr4R1ISm/g101DQAbcrEnazeUWJvYhYl/Wtjif6j8vkn193yctDQj9
+tr8sEoEAZeRwHRrBTytl2f/MuGUb1dHtU6uEiH1vpvQWC5NOolQXbLSdZKIYe+uPaFncjNkUSnOi
+f0/pI2pwGSgc+jsqTCe44zDQRszWwwatIKNpmh9XeGuc4f75i3LgAwOjp2Cnz8i7OPwyXl2NN89/
+/o1pqu+SSw/MOaVlI5P+BxhdrC+3UQhgHxMimQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -736,4 +735,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4c8cb2ea-a8d2-4d9b-992c-b21df9b5a9b5" Target="#_c04996b2-0767-49f4-bb63-7ad8c18c47dd"><Timestamp>2018-07-12 22:36:27</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6725f5e7-e947-4da9-8099-e85e5b166256" Target="#_5f838506-4961-434c-b258-4435052b5296"><Timestamp>2018-07-13 22:06:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
