@@ -139,14 +139,14 @@
       <elementValue elementRef="KEY" value="&quot;ReturnCd&quot;"/>
       <elementValue elementRef="VALUE" value="3"/>
       <elementValue elementRef="KEY" value="&quot;ReturnMsg&quot;"/>
-      <elementValue elementRef="VALUE" value="&quot;Error: &quot;+ ((String)globalMap.get(&quot;tMSSqlOutput_1_ERROR_MESSAGE&quot;))"/>
+      <elementValue elementRef="VALUE" value="&quot;Error: &quot;+ ((String)globalMap.get(&quot;tDBOutput_1_ERROR_MESSAGE&quot;))"/>
     </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSetGlobalVar_2"/>
   </node>
   <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="-32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_3"/>
-    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Error: &quot;+((String)globalMap.get(&quot;tMSSqlOutput_1_ERROR_MESSAGE&quot;))"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Error: &quot;+((String)globalMap.get(&quot;tDBOutput_1_ERROR_MESSAGE&quot;))"/>
     <elementParameter field="TEXT" name="CODE" value="3"/>
     <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
     <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
@@ -171,14 +171,14 @@
       <elementValue elementRef="KEY" value="&quot;ReturnCd&quot;"/>
       <elementValue elementRef="VALUE" value="1"/>
       <elementValue elementRef="KEY" value="&quot;ReturnMsg&quot;"/>
-      <elementValue elementRef="VALUE" value="&quot;Connect Error: &quot;+((String)globalMap.get(&quot;tMSSqlConnection_1_ERROR_MESSAGE&quot;))"/>
+      <elementValue elementRef="VALUE" value="&quot;Connect Error: &quot;+((String)globalMap.get(&quot;tDBConnection_1_ERROR_MESSAGE&quot;))"/>
     </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSetGlobalVar_4"/>
   </node>
   <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="-256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_4"/>
-    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Connect Error: &quot;+((String)globalMap.get(&quot;tMSSqlConnection_1_ERROR_MESSAGE&quot;))"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Connect Error: &quot;+((String)globalMap.get(&quot;tDBConnection_1_ERROR_MESSAGE&quot;))"/>
     <elementParameter field="TEXT" name="CODE" value="1"/>
     <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
     <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
@@ -280,7 +280,7 @@
   </node>
   <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="128" sizeX="32" sizeY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_1"/>
-    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Insert:&quot; + ((Integer)globalMap.get(&quot;tMSSqlOutput_1_NB_LINE_INSERTED&quot;)) + &quot; &lt;Rejected:&quot; +((Integer)globalMap.get(&quot;tMSSqlOutput_1_NB_LINE_REJECTED&quot;))"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Insert:&quot; + ((Integer)globalMap.get(&quot;tDBOutput_1_NB_LINE&quot;)) + &quot; &lt;Rejected:&quot; +((Integer)globalMap.get(&quot;tDBOutput_1_NB_LINE_REJECTED&quot;))"/>
     <elementParameter field="TEXT" name="CODE" value="42"/>
     <elementParameter field="CLOSED_LIST" name="PRIORITY" value="4"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -497,13 +497,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_01f9a8f5-ffee-45e0-af34-f83d3ef5fd19"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>TlEj3BhgX9TbUYZ7RDeI7FrAelE1qFdQyjbBQs2VH8TMJ5JhGssAzZwMtOvUZR9JcPliy6ehuW82
-XmKYNVMU6Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5e8481ad-c4e2-4956-9248-e3e32c58c378"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>PHfTezyQ3FN8N2u8Nfp4ouZWJVQIxcj21g0DmQmemrZCS7uiFNojtEhPfNSZWux6hnL8dA21DwjX
-YlAoB6cNPg==</DigestValue></Reference></SignedInfo><SignatureValue>dACY1B/LY39YXDccYi0QHYqSFJl5qKX3ZOj+dcNGXepNVqCYQ0zfurYQ7uSo+tdRNQqj8Cst43pR
-zgKrIofH+nzDzFtkswDfMVHEiKOePWAsPqegETgcw6mgBKOunEgM9V/lKsURKqdodaDcpyiZi2Kx
-GcTm5OF+Bonwn1qsQYCM0UtsAPWYQhHw8/J5Evf0q5EK4MtmZOd6CA79a47oz88aTWiwxVQsrmX+
-8lYWtQSMaIuw+Y6Vbt45iWZDuuW/6WmWuG4fXY0N75CZyPlC2rsItPR0aDphP5ZHanFV+7urlrK2
-9WbtFyXoUMiBglYib9FZkmqUJ+8920MEaeVN9g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5423203d-c730-4fde-83c2-6ab224135d4f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VKnkNvupZXC4pXO22eik2D+np4OSrD6EyqAZl8AwhhSU11Dg+pDUjaPkRZ+ulV0cFDnI+4dWBWwy
+W7DD7Xlu5A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_22853dc0-a8e7-4e7b-95cb-2e6231df1783"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>IB6jsK1aN6uRkjqNBKo1x6zp5NBCMt92iV9gsxsHWFYwZysLvaB5ziFSELZhgx4VluoCLXXwzhSX
+5GqVv/VO7A==</DigestValue></Reference></SignedInfo><SignatureValue>mH/UrI0/ryKzMsaSuR47+diQOoydW+Qb8i4ZSPtJfaQklnCe72RoPbzTeNqWPqNavI7e7g3R5kKm
+2YDUmp5CYERA4HHV8JsViCmoJKlWW/lFB6SUVUtqhIvuFD5OtyjQMAYPk3OfWOItsDXaGCjb6XYF
+cm3dSrEYCHvaUsate98kif9AaqaYBcKDbV/oox1UKLATUA5GAEkzyAniTRsOayYJYcfxYUBzdifG
+Vpd/qNsaHZrHYtchZ1NNwwakYAqM47sQa8wzr2xyzHU/nnXJpR5ANita8ncS1sjLhxPYgpuwnRco
+hOHsh5oQ7N/Lv0ojye3BLngBhRxeklAXgJ7XWA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -527,4 +527,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5e8481ad-c4e2-4956-9248-e3e32c58c378" Target="#_01f9a8f5-ffee-45e0-af34-f83d3ef5fd19"><Timestamp>2018-07-17 21:17:22</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_22853dc0-a8e7-4e7b-95cb-2e6231df1783" Target="#_5423203d-c730-4fde-83c2-6ab224135d4f"><Timestamp>2018-07-17 21:22:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
