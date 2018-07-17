@@ -224,7 +224,7 @@
       <column comment="" key="false" length="25" name="HSFileType" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables name="Var" sizeState="INTERMEDIATE"/>
       <outputTables activateCondensedTool="true" activateExpressionFilter="true" name="load" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="HSFileType.FileTypeID " name="FileTypeID" nullable="true" type="id_Integer"/>
@@ -387,7 +387,7 @@
       <elementValue elementRef="KEY" value="&quot;ReturnCd&quot;"/>
       <elementValue elementRef="VALUE" value="1"/>
       <elementValue elementRef="KEY" value="&quot;ReturnMsg&quot;"/>
-      <elementValue elementRef="VALUE" value="&quot;Connect Error: &quot;+((String)globalMap.get(&quot;tMSSqlConnection_1_ERROR_MESSAGE&quot;))"/>
+      <elementValue elementRef="VALUE" value="&quot;Connect Error: &quot;+((String)globalMap.get(&quot;tDBConnection_1_ERROR_MESSAGE&quot;))"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="InitVars"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -395,7 +395,7 @@
   </node>
   <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="-320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
-    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Connect Error: &quot;+((String)globalMap.get(&quot;tMSSqlConnection_1_ERROR_MESSAGE&quot;))"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Connect Error: &quot;+((String)globalMap.get(&quot;tDBConnection_1_ERROR_MESSAGE&quot;))"/>
     <elementParameter field="TEXT" name="CODE" value="1"/>
     <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
     <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
@@ -408,7 +408,7 @@
       <elementValue elementRef="KEY" value="&quot;ReturnCd&quot;"/>
       <elementValue elementRef="VALUE" value="2"/>
       <elementValue elementRef="KEY" value="&quot;ReturnMsg&quot;"/>
-      <elementValue elementRef="VALUE" value="&quot;Error: &quot;+((String)globalMap.get(&quot;tMSSqlInput_1_ERROR_MESSAGE&quot;))"/>
+      <elementValue elementRef="VALUE" value="&quot;Error: &quot;+((String)globalMap.get(&quot;tDBInput_1_ERROR_MESSAGE&quot;))"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="InitVars"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -416,7 +416,7 @@
   </node>
   <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="-160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_2"/>
-    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Error: &quot;+((String)globalMap.get(&quot;tMSSqlInput_1_ERROR_MESSAGE&quot;))"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Error: &quot;+((String)globalMap.get(&quot;tDBInput_1_ERROR_MESSAGE&quot;))"/>
     <elementParameter field="TEXT" name="CODE" value="1"/>
     <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
     <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
@@ -492,7 +492,7 @@
       <elementValue elementRef="KEY" value="&quot;ReturnCd&quot;"/>
       <elementValue elementRef="VALUE" value="3"/>
       <elementValue elementRef="KEY" value="&quot;ReturnMsg&quot;"/>
-      <elementValue elementRef="VALUE" value="&quot; Error: &quot;+((String)globalMap.get(&quot;tMSSqlOutput_2_ERROR_MESSAGE&quot;))"/>
+      <elementValue elementRef="VALUE" value="&quot; Error: &quot;+((String)globalMap.get(&quot;tDBOutput_1_ERROR_MESSAGE&quot;))"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="InitVars"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -500,30 +500,12 @@
   </node>
   <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_4"/>
-    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Error: &quot;+((String)globalMap.get(&quot;tMSSqlOutput_2_ERROR_MESSAGE&quot;))"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Error: &quot;+((String)globalMap.get(&quot;tDBOutput_1_ERROR_MESSAGE&quot;))"/>
     <elementParameter field="TEXT" name="CODE" value="1"/>
     <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
     <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDie_4"/>
-  </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="160">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlCommit_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
-    <elementParameter field="CHECK" name="CLOSE" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="Commit data"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tMSSqlCommit_1"/>
-  </node>
-  <node componentName="tMSSqlRollback" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="160">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlRollback_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
-    <elementParameter field="CHECK" name="CLOSE" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="Rollback data"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tMSSqlRollback_1"/>
   </node>
   <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetGlobalVar_6"/>
@@ -652,10 +634,6 @@
   <connection connectorName="RUN_IF" label="Fileisempty" lineStyle="6" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tWarn_1">
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileInputExcel_1_NB_LINE&quot;)) == 0"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Fileisempty"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tMSSqlCommit_1">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk7"/>
   </connection>
   <connection connectorName="FLOW" label="load" lineStyle="0" metaname="load" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -847,20 +825,6 @@
   </subjob>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlCommit_1"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Commit Data &amp; close connection"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlRollback_1"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Rollback loaded data &amp; close connection"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetGlobalVar_6"/>
     <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Set Return Cd"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;0;0"/>
@@ -885,13 +849,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7ce4d809-0302-46cc-b695-ec8c80e7246c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>c4cho8njZqsvuXgbVSEl2uRuTZlu/6N8BkXUnUR8pAzU1hPMCQIsiFkee/3QtO1E0VZBlYHoWVd7
-PufUuD+7lg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f7d840b2-f291-45d4-9a4f-4fbd6213ae58"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+eSeR8uBH5qGMP6hCRK8TmfWirEm0vYGPr/+5DftSqIS8gIEwT+hjpSLQ6K8ckxBUxvPxPM/RA+e
-QDCvLxG/UA==</DigestValue></Reference></SignedInfo><SignatureValue>RRE3op5tM5AcRRVjAMPKKWkfNXNn7jrnaRs2kse7xNQCeND8clC1DV5hOhQG702pEmrnK6TiMLDr
-CJ5Lvsf+cYrjnu7s4qvEeb2g2Z7l1afsFywfg5DObRHN/o/YFK74AqtYuLOA6NrxBfobdXQ+T837
-+oiyGiGTxdhvKhGW4ZoFXkHla81UGB9aj3G0LbjVdsA6oBz6mAlyyKZHj3D8sv+LmymYa6W3F6gJ
-pRfJO8UMfPc4UuzSvOJEd3Oqy3a7JPuD24FSxYV4d6jd+ciUOkc/NBnI93uAXnkkXeeZLV1QAEpT
-4hVnXpuSfaFGDRIXkVBrfFvxe3mqZcbYZJmWrQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5547d776-dd39-4cb4-9f4a-39396bd2dad6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>WeeHAU3GIkVc9l7CGg5JTQDnqNRtW3Cqmx1KXiao3D5V3EIE0a3Ms9edI2MqWbKUfWogEJsaIgjy
+sEav8Wj1XA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bbfb9f99-a150-4b13-b169-f373bbc8ffd2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wil4IMoFkeSmsLyGwoWzi5FE88n21K5g4uwdKHbwi+xkByHWO/BPOxeqkn0cudPbE+MwIyNTRh/h
+sx16omD0cw==</DigestValue></Reference></SignedInfo><SignatureValue>cjNe6aJ9/k+GmVuuT1EIIkL410HUiWuL68mxiSOlGKfbS40qOsOFkRudEjPEmViS0Gf0xWLG+px7
+ixWkiNTSmQsjHLwVV8+PY+ZK8I6mcE30sRw7zCw6tmwUMeWJBPjOYgSJJKD85eMiRtcm6AAA3UWq
+fQdbHkaatjH+1k1e6rjc5KOafdB7Q3RJkc0avviXR4Jd8HOZFbmp6L3uLGXtjC3UO0tEn1PRg+W+
+lrGUpoWARY3kT10NnQZE6cPz22t4VvdwgUQSYkVgHsgDwig5EkZRn5eMxngVAg90e8G8ceneXiND
+I4Qa9bdHKNvQdaEtVnX9PtKJ1L+dhlC3RgTGpg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -915,4 +879,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f7d840b2-f291-45d4-9a4f-4fbd6213ae58" Target="#_7ce4d809-0302-46cc-b695-ec8c80e7246c"><Timestamp>2018-07-17 21:01:11</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bbfb9f99-a150-4b13-b169-f373bbc8ffd2" Target="#_5547d776-dd39-4cb4-9f4a-39396bd2dad6"><Timestamp>2018-07-17 21:30:02</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
