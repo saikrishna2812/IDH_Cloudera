@@ -304,19 +304,19 @@
         <mapperTableEntries name="FileDirection" nullable="true" type="id_Character"/>
         <mapperTableEntries name="Active" nullable="true" type="id_Character"/>
       </inputTables>
-      <inputTables activateCondensedTool="true" innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="em" sizeState="INTERMEDIATE">
+      <inputTables activateCondensedTool="true" innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="em" sizeState="INTERMEDIATE">
         <mapperTableEntries name="EntityID" type="id_Integer"/>
-        <mapperTableEntries name="EntityName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="EntityFileTypeScheduleXref.EntityName " name="EntityName" nullable="true" operator="=" type="id_String"/>
       </inputTables>
-      <inputTables activateCondensedTool="true" innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="hsft" sizeState="INTERMEDIATE">
+      <inputTables activateCondensedTool="true" innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="hsft" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="" name="FileTypeID" type="id_Integer"/>
-        <mapperTableEntries name="HSFileType" type="id_String"/>
+        <mapperTableEntries expression="EntityFileTypeScheduleXref.HSFileType " name="HSFileType" operator="=" type="id_String"/>
       </inputTables>
       <inputTables activateCondensedTool="true" innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="eftx" sizeState="INTERMEDIATE">
         <mapperTableEntries name="EntityFileTypeID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="em.EntityID " name="EntityID" nullable="true" operator="=" type="id_Integer"/>
-        <mapperTableEntries name="FileTypeID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="FileMask" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="em.EntityID" name="EntityID" nullable="true" operator="=" type="id_Integer"/>
+        <mapperTableEntries expression="hsft.FileTypeID " name="FileTypeID" nullable="true" operator="=" type="id_Integer"/>
+        <mapperTableEntries expression="EntityFileTypeScheduleXref.FileMask " name="FileMask" nullable="true" type="id_String"/>
       </inputTables>
     </nodeData>
   </node>
@@ -392,7 +392,7 @@
       <column comment="" key="false" length="1" name="Active" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="Load" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="matches.EntityFileTypeSchedID " name="EntityFileTypeSchedID" nullable="true" type="id_Integer"/>
@@ -1181,7 +1181,7 @@
       <column comment="" key="false" length="-1" name="Active" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables activateExpressionFilter="true" name="Inactive" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row4.EntityFileTypeSchedID " name="EntityFileTypeSchedID" type="id_Integer"/>
@@ -1780,13 +1780,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4937e878-950f-4984-af07-5ba566d940d6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>AAhormNzGXAKvKBqj+ZPXkD/ajUH8EkiVZNYlLCfBACklF8GKcBypX0a+PmRYTRuQ03vcAsyrnHz
-MX36E15e/g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6bf63269-a296-479c-a9d2-2a41b09f236a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pfkGnqHAS/tBO9wc1YuP1QKViyhmyTu9oknKlR6bHRwCYDn3IBvXdmhi1F8RNeWxQFs+Rzyp8O5J
-L/c/20f4Xw==</DigestValue></Reference></SignedInfo><SignatureValue>lNnPOjzmKkyTrUUv9RCNVJK7lyrypd+EBAc2yPxo4rYamCK/5djuxm+8YIEvYVEu/El8q6V/k8YN
-GG5huuZ0AtJxNWQ0O2txlsFlzeOiF5vdNcSC0scROJdHjXQQH3y6b9gJ/B4H6wKUGp4miaiI+z2s
-M4V970Hqk2sfHKWSwEsxoCHNja2W2HnlCakJUlIfcJqSjaUbCMt+3h3I+RNv6OShNbBQRUEbajil
-BvFbh59L1pB6gTzUCCbNle5JY0iPUQtGibRF6nVllxObOcNRrwzHMRnwy0sFzfdlqgokpsUG95hg
-U4K6pDv7IrZujfbYAwWRDKzs2xgmQx0cTqgCPg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b40852ce-2cdd-4e47-9579-b212ba439a6f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JMBbmy9TpAQehzPc0+oIU04xGcjXGqbtOnz2PI6XBV+dDmaSHNKlnNfsh09/XiAud1AQFirfBqyl
+yQBYwCR9aQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f759906d-ba44-4651-b1ef-ac892da2b033"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>F/DVs/IvCnkbczIpvljsbsujfcHBxgL80ZUv7+L97dqzkFw+nNE2e1bvtQqHJZwQDkOztDY4ZW9E
+J1zE88T1Ig==</DigestValue></Reference></SignedInfo><SignatureValue>IEYoOhjwAPQo+JM4KNH7kumg+uCV2AwmzbpMEqcmmqujNZZDXtZDECRklGngGy/6wXJESFDI6C7X
+0HOI/iraFNuiJRZJN44NogwfbgTUYXkxJiFjdIqMmh2RcwYNRowsymekmqkfgsHo7kZ0oWaU/Wsd
+fF4yNHLCaVeaHWrGDgbQowLwCQgJvx74vc4x4FHx+ARx78tncTdNpyP64MjNWDo2rPk4xjjJ1tfI
+IXfHMV0hvNUqrWuByWe6YnS+Vy2+JK2Ye/Z2X8IdJUtIXu2n7yRsKtVGAyxPr3iwXD71kWTtxOGk
+2AUl9y0lLCvBhMLZsIAb3CqoVtHtNAZDI3TgsQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1810,4 +1810,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6bf63269-a296-479c-a9d2-2a41b09f236a" Target="#_4937e878-950f-4984-af07-5ba566d940d6"><Timestamp>2018-07-18 19:22:51</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f759906d-ba44-4651-b1ef-ac892da2b033" Target="#_b40852ce-2cdd-4e47-9579-b212ba439a6f"><Timestamp>2018-07-18 19:41:15</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
