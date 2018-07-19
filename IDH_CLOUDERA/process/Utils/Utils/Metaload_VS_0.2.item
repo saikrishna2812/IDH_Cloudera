@@ -253,7 +253,7 @@
         <mapperTableEntries name="StepDescription" nullable="true" type="id_String"/>
         <mapperTableEntries name="JobName" nullable="true" type="id_String"/>
         <mapperTableEntries name="Active" nullable="true" type="id_Character"/>
-        <mapperTableEntries name="Effectdate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="Effectivedate" nullable="true" type="id_Date"/>
       </inputTables>
     </nodeData>
   </node>
@@ -340,7 +340,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  `validationstep`.`StepID`, &#10;  `validationstep`.`StepName`, &#10;  `validationstep`.`StepDescription`, &#10;  `validationstep`.`JobName`, &#10;  `validationstep`.`Active`, &#10;  `validationstep`.`Effectdate`&#10;FROM `validationstep`&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  `validationstep`.`StepID`, &#10;  `validationstep`.`StepName`, &#10;  `validationstep`.`StepDescription`, &#10;  `validationstep`.`JobName`, &#10;  `validationstep`.`Active`, &#10;  `validationstep`.`Effectivedate`&#10;FROM `validationstep`&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -361,7 +361,7 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Active"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Effectdate"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Effectivedate"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="ValidationStep_inputdb"/>
@@ -372,7 +372,7 @@
       <column comment="" key="false" length="-1" name="StepDescription" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="JobName" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Active" nullable="true" pattern="" precision="-1" sourceType="CHAR" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Effectdate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Effectivedate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="160">
@@ -664,7 +664,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  `validationstep`.`StepID`, &#10;  `validationstep`.`StepName`, &#10;  `validationstep`.`StepDescription`, &#10;  `validationstep`.`JobName`, &#10;  `validationstep`.`Active`, &#10;  `validationstep`.`Effectdate`&#10;FROM `validationstep`&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  `validationstep`.`StepID`, &#10;  `validationstep`.`StepName`, &#10;  `validationstep`.`StepDescription`, &#10;  `validationstep`.`JobName`, &#10;  `validationstep`.`Active`, &#10;  `validationstep`.`Effectivedate`&#10;FROM `validationstep`&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -685,7 +685,7 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Active"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Effectdate"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Effectivedate"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="ValidationStep_inputdb"/>
@@ -696,7 +696,7 @@
       <column comment="" key="false" length="-1" name="StepDescription" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="JobName" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Active" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Effectdate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Effectivedate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="544">
@@ -718,7 +718,7 @@
       <column comment="" key="false" length="-1" name="Active" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables activateExpressionFilter="true" expressionFilter="row5.StepName==null" name="Inactive" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row2.StepID " name="StepID" type="id_Integer"/>
@@ -730,7 +730,7 @@
         <mapperTableEntries name="StepDescription" nullable="true" type="id_String"/>
         <mapperTableEntries name="JobName" nullable="true" type="id_String"/>
         <mapperTableEntries name="Active" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Effectdate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="Effectivedate" nullable="true" type="id_Date"/>
       </inputTables>
       <inputTables activateCondensedTool="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row5" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row2.StepID " name="StepID" operator="=" type="id_Integer"/>
@@ -1004,7 +1004,7 @@
       <elementValue elementRef="TRACE_COLUMN" value="Active"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Effectdate"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Effectivedate"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
@@ -1076,7 +1076,7 @@
       <elementValue elementRef="TRACE_COLUMN" value="Active"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Effectdate"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Effectivedate"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
@@ -1276,13 +1276,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4e8c0187-bc10-408d-9409-8a2033e63a3a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9P4Ct7zqG47bc5Q0F5qeFknSzKOeHG/1V3ybDjn1piC4n8QP52M7PPRSfUikPhz6hzpSx3d95ksS
-41MOJqiHWg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_406b1be2-d1a0-40a0-874e-67555043ac13"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>EmGi2LwvND7sZCNi0faYDkNvLVqPdNYasdYMecrwiFclJALeN8i/lGD6VQPN8qAjL09yisjJP47H
-6iK89DXtdA==</DigestValue></Reference></SignedInfo><SignatureValue>0VdQ+o2jnf8EDFMDeyYZr4p0OdPbVL/XuAFzqhI0dG6k2qDbTcA4qLVjzb3UkDZx6Hlt+1EZZG4P
-D6TxDBsDR6dhDSIOshgNsnwFnirqrlQVNppi0M1Voo+LoBrNx7T16L+GrmqC5R1Li1pHL24W3U7U
-AihuBqZfNcNMFFg8JXUwwsl1GWjZT3gV51r+iuKY79XAPETwHg/NJzuV53nTZeJkT6jtpTbv4Xgo
-xp2ix+nuJBN37BvuXUrVcidPMb6xlKTg/ANJ45BWija9G0Cwk+mtv3HdVV+240U6cTd3R70wn4ez
-3UY+u+DgNFDZAugGmRBZS7IXpm9x8nFPqxmq2A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_02b947ce-eac5-4491-b032-21ca3ef5f110"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Wi7lFPlWwV5fv4tCWepETgsDwXthDlR67UC7ZV54+W3RlowP9fWEYhqO1GgGzUIeIrjV9svrr2EQ
+KC6vIG1h0A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8e946a2c-ac2c-4c24-b41a-5ca3bfb25abb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>iy4bvR86qHCguGjXC39mpQ0jWdN7ZA2EptviVAw63zZD/lQ4abVA0VyR/ckXx0dHRPdl1Cr7wLF0
+a6XHJod37w==</DigestValue></Reference></SignedInfo><SignatureValue>ZBoiEZ3ahJ8uRIauPpBwXra1FhuddfzlW2onGRvWFj72kRVd+FTaG4d7f5gOLQ4TUp1Km+eIGRkC
+NmmN0tRHoTAX8sIqpRmPkNWKX3gs6Cg04krCIayqG8egKcy1SBRsEeG57FD2KCsZPPFwLId13Pl5
+JqvsSEmz606McXQ7CZlGIQcD1Igl8C3sXdcoiMy0DDzyFZLwSxtrTFGAB4E62tquo7DAkbLy6Seu
+WQxooksyyDiKJj2SyjMfuOQKz5ZThCo92MzvHfLBXWCJweGBL0h3QxmMeMVYwMvjM6tLYbN3rHcK
+/HX9z1JbUgO/+QjYdgvA9WRQuEH6Id2DVJfU9A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1306,4 +1306,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_406b1be2-d1a0-40a0-874e-67555043ac13" Target="#_4e8c0187-bc10-408d-9409-8a2033e63a3a"><Timestamp>2018-07-19 18:58:09</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8e946a2c-ac2c-4c24-b41a-5ca3bfb25abb" Target="#_02b947ce-eac5-4491-b032-21ca3ef5f110"><Timestamp>2018-07-19 19:01:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
