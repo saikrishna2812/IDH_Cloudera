@@ -734,7 +734,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  `validationrule`.`RuleID`, &#10;  `validationrule`.`RuleTypeID`, &#10;  `validationrule`.`RuleValue`, &#10;  `validationrule`.`RuleDescription`, &#10;  `validationrule`.`RuleforTable`, &#10;  `validationrule`.`Active`, &#10;  `validationrule`.`EffectiveDate`&#10;FROM `validationrule`&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  `validationrules`.`RuleID`, &#10;  `validationrules`.`RuleTypeID`, &#10;  `validationrules`.`RuleValue`, &#10;  `validationrules`.`RuleDescription`, &#10;  `validationrules`.`RuleforTable`, &#10;  `validationrules`.`Active`, &#10;  `validationrules`.`EffectiveDate`&#10;FROM `validationrules`&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -788,7 +788,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  `validationrule`.`RuleID`&#10;FROM `validationrule`&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  `validationrules`.`RuleID`&#10;FROM `validationrules`&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -1121,7 +1121,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  `validationrule`.`RuleID`, &#10;  `validationrule`.`RuleTypeID`, &#10;  `validationrule`.`RuleValue`, &#10;  `validationrule`.`RuleDescription`, &#10;  `validationrule`.`RuleforTable`, &#10;  `validationrule`.`Active`, &#10;  `validationrule`.`EffectiveDate`&#10;FROM `validationrule`&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  `validationrules`.`RuleID`, &#10;  `validationrules`.`RuleTypeID`, &#10;  `validationrules`.`RuleValue`, &#10;  `validationrules`.`RuleDescription`, &#10;  `validationrules`.`RuleforTable`, &#10;  `validationrules`.`Active`, &#10;  `validationrules`.`EffectiveDate`&#10;FROM `validationrules`&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -1970,13 +1970,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7f8093ae-4af1-4d5c-8a03-90020faf4142"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>BaTYlM+KZySuomsojG681ZJKU7h2VzoC/CQvCxX3QZbgaTtnmKdkIIbIfICXEJmRzF2SjzEsAVs1
-sbK8qezXmA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a5a61064-0c5d-4665-8b4a-a5237daa2efe"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>d5DMdnYLyfpdbiM2Op7Smip3hokoVxU8G8DOtE7hMyHKE7hiOpc//OfY4+gdjajB3DPyZ+NqMzSZ
-6dZPc+I+9g==</DigestValue></Reference></SignedInfo><SignatureValue>ZpkriAt//O41mX/5TLynqFH6XHvRfK8vB67ZuOzzmxD6Bv+1bMC0+w3wF0R7rM5hit6eNe9HBCVK
-h+Kl1oSXzWOgaB6Yr9YCqy5I1AlHyO++YdsN9eKHJJMUWhvxryOgq1ieO0EiUvltpXGOLf5ySRBS
-3IQ3mdIU/Q8mXdYgJoC+nC6e4vS5nEuDqtreqFi4sc+d6OB5NbDU5pfsiW85o8GVuDxBkwcfVZE5
-BzswtBVlZ0xqRQRXtaZRwCyix4nZCs+3yTuizL+hng67tHOID4izlYQov3WuZ2uTa9Do+/nlp6aU
-FgT5i3389dphLHMEjBYFNXXaeniJQQnJ2cg3Jw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_650e247d-e090-4656-8ebc-5548693b0373"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Gk90VWzKw1NNbaCRcJtr9jPvXQOgkEx+MgqZHTs1LxhI/BcnD2Ao49mgchijwSbbxZXjHHXsXkPA
+BStyk2v0Zg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9bdc6cb0-39db-455e-b94b-229d4e6d3abd"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kLIE/hgPkk5nHYSOZYWwuU9onPPol9EnblolE2xbitnc8ZnX11BHwCWB1xKmiywKDiJC9pNZnTG5
+FX5MnmDafA==</DigestValue></Reference></SignedInfo><SignatureValue>CgR2/8FteeDkao5TT5vGR1KLkoC5uPKFPkzbf0oc6PJr5IWYSMw3NtpJ017HnPClUEp6t7Nmddei
+qfLBVpz/sqQ50crsAO3A2xSdm0J1ZkAlMKGjtYgOkji+T8Z8AOyKod1geoov/JqMXFgT39Pj+6BP
+xaWIM0Kn/ZU+mJVFKEmOOLni4VAdCmxzjKIwYVftoyNmgWplVGiL00ygrNZfU3PEDFNzXwuBoyWx
+kl+u95J0WsW/GDp3R4V8dimBHt1D08m+QRQAYy4hyubUCjV2N4PmAl3e92qFOytXrral8jP/enwB
+dVATgdZuogucSD1FqqNZxTMErC/Fl5lju2L6ag==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -2000,4 +2000,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a5a61064-0c5d-4665-8b4a-a5237daa2efe" Target="#_7f8093ae-4af1-4d5c-8a03-90020faf4142"><Timestamp>2018-07-19 19:24:13</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9bdc6cb0-39db-455e-b94b-229d4e6d3abd" Target="#_650e247d-e090-4656-8ebc-5548693b0373"><Timestamp>2018-07-19 19:24:59</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
