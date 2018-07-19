@@ -289,7 +289,7 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out1">
-      <column comment="" key="false" length="-1" name="EntityTypeID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EntityFileTypeID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="StepID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="ChunkNTile" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="ChunkOver" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -300,7 +300,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="out1" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row3.EntityFileTypeID " name="EntityTypeID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row3.EntityFileTypeID " name="EntityFileTypeID" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="row4.StepId " name="StepID" type="id_Integer"/>
         <mapperTableEntries expression="row2.ChunkNTile " name="ChunkNTile" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row2.ChunkOver " name="ChunkOver" nullable="true" type="id_String"/>
@@ -422,7 +422,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;validationrules&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;entityfiletypestepchunk&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
@@ -442,7 +442,7 @@
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="EntityTypeID"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EntityFileTypeID"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -479,10 +479,10 @@
     <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
     <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="ValidationRule"/>
+    <elementParameter field="TEXT" name="LABEL" value="EntityFileTypeStepChunk"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_2">
-      <column comment="" key="false" length="-1" name="EntityTypeID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EntityFileTypeID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="StepID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="ChunkNTile" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="ChunkOver" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -490,7 +490,7 @@
       <column comment="" key="false" length="-1" name="Active" nullable="true" pattern="" precision="-1" sourceType="CHAR" type="id_Character" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="false" length="-1" name="EntityTypeID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EntityFileTypeID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="StepID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="ChunkNTile" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="ChunkOver" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -655,7 +655,7 @@
   </connection>
   <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_2">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="EntityTypeID"/>
+      <elementValue elementRef="TRACE_COLUMN" value="EntityFileTypeID"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="StepID"/>
@@ -853,13 +853,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;128;128"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e9805e92-9b9b-490e-9fe3-7e2662eee3ce"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>WIpWVgpDHl0JT5ihFJRHUK7uoR9B02x5VlZK5I7t5+XJ2f7awWWgNgBFd4hdR+vLD2XoPVATLVuP
-N2luq6gddQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8d6452eb-a274-42aa-8822-83f6f77f8a68"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>a7e5Kjh/bIEiCxDAw+pd75B9SaEgHy4wLFkMxzlKVtvW3fmKzGL6A5+kqp8hBJqXExPqEW0QEec1
-lRyKcRYhdg==</DigestValue></Reference></SignedInfo><SignatureValue>xYP3iV52EsxhcrYIiB5nTh6yAJhWJ1rwIpYUCKJHk3RWwYGnYRwFHgGVEVb2BvPrIM1897MRpNON
-sclevwCzpiKoXSgKxo1lZw8QmdyOfH24tJUA9Q9XuAhEtZdj2xNKIjWlw/cSC86hIXI0ZZz1MBYY
-ho/4rPZVf6PPlT6q5bDyfEKvIF4juKU3joPxFvkUp9qHI8K0TYVH0Mo27/RCxjFMy8emhZqJFjXj
-01IPUKgfSjs/CoHYcm73kF+zpKX2FNRcb0ho0pK0MzMt9o2yw44cgbVDiTMiXClNoBWrHO/oRITb
-6AAwbLaOR2kiaieulrHvfOkn+qTCsqx4VXNoDQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b42500b8-da12-4dde-97af-0e17d4294531"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>f2MRZzooWTGjl7FVV7IozhjFRA5ckholJwEH7rjtkVmV/1LPewSE/jMcyi+kGtCKTLokQcX8pwzx
+nm9/q31sIw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a7f3eece-16ad-4839-ae45-90b63be47e95"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pS6hOAVfp3OB3MVvB1QC0ts6M/nBbPgw6D86C1na8vTrG+fTTAvY6wVTYofybEsvNfqINOQkBO85
+RzBqpdnlkg==</DigestValue></Reference></SignedInfo><SignatureValue>PSigLuV03yxiWYfsjzvpmcZse4B+FfsN5PRB550Y4BDZY35hmqDQ0LIy5mORGpEhTvYi291FqkhO
+SWA0IXRHH/QJOVykmf1JF/eMbLhNwOqQpWUtmkednqt1GB5Oej/2DcnZC5zssukgZnluTR476Hlv
+nxblNF7YrThXV7TQQ8fiuCHH/phI2adNCv53zrOEgiEooN+9i3fZ2obADqItU/d4tQ1mg9gIeQje
+gJ4drkl1ZRz4HnY3Z275SowwDF2JYiTVcvgcabIqkW/y5+pEYKPNpTq5aaXGnNJ1AbPl1pbNRcyY
+fkjxKLo8FsvPOiWTKE7NyCN4s5m64rY3Lf2htA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -883,4 +883,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8d6452eb-a274-42aa-8822-83f6f77f8a68" Target="#_e9805e92-9b9b-490e-9fe3-7e2662eee3ce"><Timestamp>2018-07-19 20:41:32</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a7f3eece-16ad-4839-ae45-90b63be47e95" Target="#_b42500b8-da12-4dde-97af-0e17d4294531"><Timestamp>2018-07-19 20:47:07</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
