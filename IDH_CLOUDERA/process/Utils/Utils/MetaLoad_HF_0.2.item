@@ -277,7 +277,7 @@
       <column comment="" key="false" length="24" name="FileMask" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="Match" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="HeaderFooter_Input.RecType" name="RecType" nullable="true" type="id_Character"/>
@@ -546,26 +546,6 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="copyOfLoad">
-      <column comment="" key="false" length="2" name="EntityFileTypeSchedID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EntityFileTypeID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="ScheduleFequencyType" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="SchFrequencyValue" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="ScheduleOffsetType" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="ScheduleOffsetValue" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="FileDirection" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="CHAR" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="Active" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="FLOW" name="Insertion">
-      <column comment="" key="false" length="2" name="EntityFileTypeSchedID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EntityFileTypeID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="ScheduleFequencyType" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="SchFrequencyValue" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="ScheduleOffsetType" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="ScheduleOffsetValue" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="FileDirection" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="CHAR" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="Active" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
-    </metadata>
     <metadata connector="FLOW" label="out1" name="Load">
       <column comment="" defaultValue="" key="true" length="10" name="EntityFileTypeID" nullable="true" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="true" length="1" name="RecType" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Character" usefulColumn="true"/>
@@ -597,53 +577,33 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
-      <outputTables name="copyOfLoad" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="matches.EntityFileTypeSchedID " name="EntityFileTypeSchedID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="matches.EntityFileTypeID " name="EntityFileTypeID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="matches.ScheduleFequencyType " name="ScheduleFequencyType" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="matches.SchFrequencyValue " name="SchFrequencyValue" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="matches.ScheduleOffsetType " name="ScheduleOffsetType" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="matches.ScheduleOffsetValue " name="ScheduleOffsetValue" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="matches.FileDirection " name="FileDirection" nullable="true" type="id_Character"/>
-        <mapperTableEntries expression="&quot;A&quot;" name="Active" nullable="true" type="id_String"/>
-      </outputTables>
-      <outputTables name="Insertion" rejectInnerJoin="true" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="matches.EntityFileTypeSchedID  " name="EntityFileTypeSchedID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="matches.EntityFileTypeID  " name="EntityFileTypeID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="matches.ScheduleFequencyType  " name="ScheduleFequencyType" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="matches.SchFrequencyValue  " name="SchFrequencyValue" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="matches.ScheduleOffsetType  " name="ScheduleOffsetType" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="matches.ScheduleOffsetValue  " name="ScheduleOffsetValue" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="matches.FileDirection  " name="FileDirection" nullable="true" type="id_Character"/>
-        <mapperTableEntries expression="&quot;A&quot;" name="Active" nullable="true" type="id_String"/>
-      </outputTables>
       <outputTables name="Load" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="EntityFileTypeID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="RecType" nullable="true" type="id_Character"/>
-        <mapperTableEntries name="SeqNum" nullable="true" type="id_Short"/>
-        <mapperTableEntries name="EntityID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="FileTypeID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="HeaderFooterType" nullable="true" type="id_String"/>
-        <mapperTableEntries name="FileRecNum" nullable="true" type="id_String"/>
-        <mapperTableEntries name="ColCnt" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="Active" nullable="true" type="id_String"/>
-        <mapperTableEntries name="EffectiveDate" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="ColumnsWidth" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="ColumnsPattern" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.EntityFileTypeID" name="EntityFileTypeID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row3.RecType" name="RecType" nullable="true" type="id_Character"/>
+        <mapperTableEntries expression="row3.SeqNum" name="SeqNum" nullable="true" type="id_Short"/>
+        <mapperTableEntries expression="row3.EntityID" name="EntityID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row3.FileTypeID" name="FileTypeID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row3.HeaderFooterType" name="HeaderFooterType" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.FileRecNum" name="FileRecNum" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.ColCnt" name="ColCnt" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row3.Active" name="Active" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.EffectiveDate" name="EffectiveDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row3.ColumnsWidth" name="ColumnsWidth" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row3.ColumnsPattern" name="ColumnsPattern" nullable="true" type="id_String"/>
       </outputTables>
       <outputTables name="IJ" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="EntityFileTypeID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="RecType" nullable="true" type="id_Character"/>
-        <mapperTableEntries name="SeqNum" nullable="true" type="id_Short"/>
-        <mapperTableEntries name="EntityID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="FileTypeID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="HeaderFooterType" nullable="true" type="id_String"/>
-        <mapperTableEntries name="FileRecNum" nullable="true" type="id_String"/>
-        <mapperTableEntries name="ColCnt" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="Active" nullable="true" type="id_String"/>
-        <mapperTableEntries name="EffectiveDate" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="ColumnsWidth" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="ColumnsPattern" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.EntityFileTypeID" name="EntityFileTypeID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row3.RecType" name="RecType" nullable="true" type="id_Character"/>
+        <mapperTableEntries expression="row3.SeqNum" name="SeqNum" nullable="true" type="id_Short"/>
+        <mapperTableEntries expression="row3.EntityID" name="EntityID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row3.FileTypeID" name="FileTypeID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row3.HeaderFooterType" name="HeaderFooterType" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.FileRecNum" name="FileRecNum" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.ColCnt" name="ColCnt" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row3.Active" name="Active" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.EffectiveDate" name="EffectiveDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row3.ColumnsWidth" name="ColumnsWidth" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row3.ColumnsPattern" name="ColumnsPattern" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
         <mapperTableEntries name="RecType" nullable="true" type="id_Character"/>
@@ -659,10 +619,10 @@
         <mapperTableEntries name="FileTypeID" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="EntityID" nullable="true" type="id_Integer"/>
       </inputTables>
-      <inputTables activateCondensedTool="true" innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="HeaderFooter_db" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="" name="EntityFileTypeID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="RecType" nullable="true" type="id_Character"/>
-        <mapperTableEntries name="SeqNum" nullable="true" type="id_Short"/>
+      <inputTables activateCondensedTool="true" innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="HeaderFooter_db" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row3.EntityFileTypeID " name="EntityFileTypeID" nullable="true" operator="=" type="id_Integer"/>
+        <mapperTableEntries expression="row3.RecType " name="RecType" nullable="true" operator="=" type="id_Character"/>
+        <mapperTableEntries expression="row3.SeqNum " name="SeqNum" nullable="true" operator="=" type="id_Short"/>
         <mapperTableEntries name="EntityID" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="FileTypeID" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="HeaderFooterType" nullable="true" type="id_String"/>
@@ -1878,13 +1838,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_02041d24-c160-42c2-a92b-504130f79ab7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3FQpLKkMNDFZTQTwniHf9b3YMPi1mD3Z+/8qzyIWcLxYtn1ygMr4I6HKqlpVg1gc+T2uY4wAETJ4
-QD6P+nvrGA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6728fa13-3559-4cb2-bd41-0f24eb088a54"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>HHNY0T8VIBvVx/HjOKFoKpAGF+EUyfFWAuN3wA5jAkihdTfJ8j70CdCu99Op2g30lgws+6D3nUDi
-DP0L7qReGA==</DigestValue></Reference></SignedInfo><SignatureValue>bEKDrQdkG4SM8wXVNHlmlcaL09ALMys021t9AE53WXx0IAKz9LOKNH+WuErj3e3LUqr6aISwLyGg
-RMdABg0hWWJyNrfp+T7Jp0aQ2yhRy+/AyCHfbgb988RdPgX/SVl22vbUZfxi+xW2im+12m0czN2e
-i6DFOnx2FBRNfa7efqBHC00Fub3e0GQDZZeChQ5SLEpewwZ6dDpM2Kh0w8cBGZpHnJTgRNUgc5KV
-7PBygfvXxsUmfTRdWY3J4t3eqnWi1/MEC3ZMKSWOhHn1FgBivq9ZQx71PABj0EDK4+LN0rPX2Y80
-+qZTepF1Cm52gvkanG84nGH6K7ZY/twjTdDd8A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3b96fd38-a820-4850-b18e-0569ac7b8e84"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>WKDE3PuL+Zxhdy9PmEebsLrv27+jyfkPE5nR6D0EmryCa/HXYPWvPywT+RKK4Xe50ltM3r/OWkKK
+cS2xX3PIjA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6e2c0908-92cf-4909-905c-52ba8e10f6a5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VoC7n3ZXfOPcTtFnp+OPWO5CjR+dy7FLWN4101gxDF/02AQLEDKPtZZpwLMEgzgtfIivjIjcQhwW
+izIQ3+4eBg==</DigestValue></Reference></SignedInfo><SignatureValue>a3OYaEAf6UwmlblB7w+KwdpSRqxvbU6JFdEtn8TNCEauDNofI7orA/dTSlVJ6ICwTb3bouxA8xBT
+FwocXMnKmabGgqWHHbviPCnHs39fOBeCLlmp/z4k4Kthdf3ccRRj4Dh6b6TtUBfBea+KIEZIoalT
+dMcH1zMLcOMWGOhl5EX9Zyu7c0ChrODRqbbv8rCRFVMv1JFpob2zQPgSgv33GM4gcKP6WxThmCPL
+OcDSg1S/ATFsX4Q9xa0qEqtZiZGrK5thbyYKHm0kiG2/g0GNIJJYgIo5urUlDD8lOT7dbPIDJVIR
+jma0M0hcE8gCbhmVm0+nquYCc3Aj0qAN31CqRQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1908,4 +1868,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6728fa13-3559-4cb2-bd41-0f24eb088a54" Target="#_02041d24-c160-42c2-a92b-504130f79ab7"><Timestamp>2018-07-18 20:56:17</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6e2c0908-92cf-4909-905c-52ba8e10f6a5" Target="#_3b96fd38-a820-4850-b18e-0569ac7b8e84"><Timestamp>2018-07-19 17:24:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
