@@ -337,7 +337,7 @@
       <column comment="" key="false" length="-1" name="EntityFileRuleID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables name="Var" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="EM.EntityName == null ? false : true" name="EM" type="id_Boolean"/>
         <mapperTableEntries expression="HSFT.HSFileType == null ? false : true" name="FT" type="id_Boolean"/>
@@ -359,7 +359,7 @@
         <mapperTableEntries expression="Source.RuleParam10 " name="RuleParam10" nullable="true" type="id_String"/>
         <mapperTableEntries expression="EFRXref.EntityFileRuleID " name="EntityFileRuleID" nullable="true" type="id_Integer"/>
       </outputTables>
-      <inputTables lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" minimized="true" name="Source" sizeState="INTERMEDIATE">
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="Source" sizeState="INTERMEDIATE">
         <mapperTableEntries name="EntityFileRuleId" type="id_Integer"/>
         <mapperTableEntries name="FileMask" nullable="true" type="id_String"/>
         <mapperTableEntries name="EntityName" nullable="true" type="id_String"/>
@@ -383,20 +383,20 @@
         <mapperTableEntries name="RuleValue" nullable="true" type="id_String"/>
       </inputTables>
       <inputTables activateCondensedTool="true" innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" minimized="true" name="HSFT" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="FileTypeID" type="id_Integer"/>
+        <mapperTableEntries expression="" name="FileTypeID" type="id_Integer"/>
         <mapperTableEntries expression="Source.HSFileType " name="HSFileType" type="id_String"/>
       </inputTables>
-      <inputTables activateCondensedTool="true" innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" minimized="true" name="EFTXref" sizeState="INTERMEDIATE">
+      <inputTables innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" minimized="true" name="EFTXref" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="" name="EntityFileTypeID" type="id_Integer"/>
-        <mapperTableEntries expression="EM.EntityID " name="EntityID" type="id_Integer"/>
+        <mapperTableEntries expression="" name="EntityID" type="id_Integer"/>
         <mapperTableEntries expression="HSFT.FileTypeID " name="FileTypeID" type="id_Integer"/>
         <mapperTableEntries expression="Source.FileMask " name="FileMask" nullable="true" type="id_String"/>
       </inputTables>
-      <inputTables activateCondensedTool="true" innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" minimized="true" name="VS" sizeState="INTERMEDIATE">
+      <inputTables innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" minimized="true" name="VS" sizeState="INTERMEDIATE">
         <mapperTableEntries name="StepID" type="id_Integer"/>
         <mapperTableEntries expression="Source.StepName " name="StepName" type="id_String"/>
       </inputTables>
-      <inputTables activateCondensedTool="true" innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" minimized="true" name="VR" sizeState="INTERMEDIATE">
+      <inputTables innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" minimized="true" name="VR" sizeState="INTERMEDIATE">
         <mapperTableEntries name="RuleID" type="id_Integer"/>
         <mapperTableEntries expression="Source.RuleValue " name="RuleValue" type="id_String"/>
       </inputTables>
@@ -413,7 +413,7 @@
         <mapperTableEntries name="ParamColName" nullable="true" type="id_String"/>
       </inputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="EM" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="EntityID" type="id_Integer"/>
+        <mapperTableEntries expression="" name="EntityID" type="id_Integer"/>
         <mapperTableEntries name="EntityName" type="id_String"/>
       </inputTables>
     </nodeData>
@@ -1838,13 +1838,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d84c85f3-6d31-4208-9e54-5d552c6df524"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7XXqi3mZymD/BhERGh4PwxtRN4JczufcS1tIN9aUNCRPK0ecdyux3BLsgG4GWWI0+TubyUz6Zsrz
-wvkyk6Jb5w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_87031aa4-33ec-4b5e-a31c-2dffe7632f56"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>RYDO70gFU2CF13b4mGO4mS2AJaX2xFfCXtTiJBCi1hr8kFXbhRFflqGzKpboAFGDzLWYI4+jH+hu
-NFwA2XBNbg==</DigestValue></Reference></SignedInfo><SignatureValue>cdZ/ctIlAHNMML1yhvEY2k6IaSHtsFcmztNgkMjbIBz3SxlHQd+uZnvieAxX5775u8Xp00c8yLir
-yIvXugrMIFw/I9bSblJFQAPTlCP7/sDUdIcytH6qYyhTCW2aI4PKKGgdAYnnk09uZ7dH52uP83fB
-FwOuHM+3qQY2S5Xg5yZe0X3q9Jx+vkZe34yBlZHas3+BGkR4b1R7vxmspTNosdkMNklaBOKKNL9T
-MN4bVaSJo+VM+VT+NuIHWv4Cx1rWGA9hPmy0B4oWkqjTTjL8mkJnbULVZ2pgz4X+HDM0bt/tJxtA
-JuEuwWLjZNBP9nxIJDxD4urBxMPUk6L1eOn8Bw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7b951e46-0175-4ee4-a98f-37f9fdea0761"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>R+u6d3gBjND5juGQag0k6/encuUsIvK6kVxuAbIr+HjIr0Lj1CUr+CUUNIcEXi2433P9D7isW43v
+EzZINuLhSQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0a9980a2-7aa7-46e1-a87e-97c4b458eae1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>4yq/pXJ+IJqwd5ApzEARmvQ/OupKprw2+yWNKwc8ZuD4JTpIGX6JV3+9xxyyLs7uRWj9mo70xdga
+oKqG63WysQ==</DigestValue></Reference></SignedInfo><SignatureValue>ypebs4TlCGSJ9b78sr78YYImU7mU/DuulCVS+O7MuTUy1/kO4jxWXALA0fsHoYVpzHCILwESPne0
+08Ko7fpXhYpKdxCWFXZ0H0aS/qdNETPQL82XruA5rVLVv7fU5bHzWSiiMvHJ6nZBBOKC9S22Bjpc
+7ICkGga8CZk2dgIqCYx4GlgU/niUUWH7wWHkMlTAJ5Eynq6zwaL0CPo1s306TRBe5LSQUW8P42H1
+mF6GAE7+tp97IW4HjkIo0/B1mgUmOoCZufoaafqU4ka+q6QA2FOKq303oIp/GGJvBGePst8wy/Xw
+RQZuELfQTFAhpGyoI7G+sSP7YpCbTJ8EDSvhLA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1868,4 +1868,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_87031aa4-33ec-4b5e-a31c-2dffe7632f56" Target="#_d84c85f3-6d31-4208-9e54-5d552c6df524"><Timestamp>2018-07-20 18:51:14</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0a9980a2-7aa7-46e1-a87e-97c4b458eae1" Target="#_7b951e46-0175-4ee4-a98f-37f9fdea0761"><Timestamp>2018-07-20 19:07:38</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
