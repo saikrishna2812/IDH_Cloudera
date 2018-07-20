@@ -157,14 +157,14 @@
       <elementValue elementRef="KEY" value="&quot;ReturnCd&quot;"/>
       <elementValue elementRef="VALUE" value="3"/>
       <elementValue elementRef="KEY" value="&quot;ReturnMsg&quot;"/>
-      <elementValue elementRef="VALUE" value="&quot;Error: &quot;+((String)globalMap.get(&quot;tMSSqlOutput_1_ERROR_MESSAGE&quot;))"/>
+      <elementValue elementRef="VALUE" value="&quot;Error: &quot;+((String)globalMap.get(&quot;tDBOutput_1_ERROR_MESSAGE&quot;))"/>
     </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSetGlobalVar_2"/>
   </node>
   <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="-192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_3"/>
-    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Error: &quot;+((String)globalMap.get(&quot;tMSSqlOutput_1_ERROR_MESSAGE&quot;))"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Error: &quot;+((String)globalMap.get(&quot;tDBOutput_1_ERROR_MESSAGE&quot;))"/>
     <elementParameter field="TEXT" name="CODE" value="3"/>
     <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
     <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
@@ -189,14 +189,14 @@
       <elementValue elementRef="KEY" value="&quot;ReturnCd&quot;"/>
       <elementValue elementRef="VALUE" value="1"/>
       <elementValue elementRef="KEY" value="&quot;ReturnMsg&quot;"/>
-      <elementValue elementRef="VALUE" value="&quot;Connect Error: &quot;+((String)globalMap.get(&quot;tMSSqlConnection_1_ERROR_MESSAGE&quot;))"/>
+      <elementValue elementRef="VALUE" value="&quot;Connect Error: &quot;+((String)globalMap.get(&quot;tDBConnection_1_ERROR_MESSAGE&quot;))"/>
     </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSetGlobalVar_4"/>
   </node>
   <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="-384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_4"/>
-    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Connect Error: &quot;+((String)globalMap.get(&quot;tMSSqlConnection_1_ERROR_MESSAGE&quot;))"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Connect Error: &quot;+((String)globalMap.get(&quot;tDBConnection_1_ERROR_MESSAGE&quot;))"/>
     <elementParameter field="TEXT" name="CODE" value="1"/>
     <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
     <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
@@ -300,33 +300,31 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="-192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlOutput_1"/>
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="-192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
-    <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="JTDS"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
     <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;1433&quot;"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;ThreadThreadPoolXref&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;threadthreadpoolxref&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
-    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
-    <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
-    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" show="false" value="false"/>
-    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="PoolID"/>
-    <elementParameter field="TEXT" name="START_VALUE" show="false" value="1"/>
-    <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
-    <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
-    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
+    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
+    <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" show="false" value="10000"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
@@ -354,13 +352,15 @@
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
     </elementParameter>
-    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
-    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
-    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
-    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
+    <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="ThreadThreadPoolXref"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tMSSqlOutput_1">
+    <metadata connector="FLOW" name="tDBOutput_1">
       <column comment="" key="true" length="-1" name="Thread" nullable="false" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="true" length="-1" name="PoolID" nullable="false" originalLength="500" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="EffectiveDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
@@ -371,8 +371,8 @@
       <column comment="" key="true" length="-1" name="PoolID" nullable="false" originalLength="500" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="EffectiveDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Active" nullable="true" pattern="" precision="-1" sourceType="CHAR" type="id_Character" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMysqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="-384">
@@ -423,7 +423,7 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSetGlobalVar_5" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_5" target="tDie_5">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk6"/>
   </connection>
-  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tMSSqlOutput_1">
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tDBOutput_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="Thread"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
@@ -448,7 +448,7 @@
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFileInputExcel_1_NB_LINE&quot;)) == 0"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Fileisempty"/>
   </connection>
-  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tMSSqlOutput_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlOutput_1" target="tSetGlobalVar_2">
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tDBOutput_1" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_1" target="tSetGlobalVar_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentError1"/>
   </connection>
   <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tSetGlobalVar_4">
@@ -542,13 +542,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_28dcd996-089c-4b0a-9f96-339942701f0f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Clpb7P+Dh8npSl7m+SDVXYCt97ufruZSlxK+L5GP5esuSW9OyFbxjokIzbyMKp0V1mnn3Tf3bo1O
-r2vYgVUbKQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a28852e4-9034-4b40-9776-86e31d7f28d0"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>OA0+/RURzYmjHSeEtrhRaj0EeO2cSXflenDYhfwwX3ziDyWNUI0okjmGt/Ar0Dh/lQYxrWZyichP
-u1OPQdittw==</DigestValue></Reference></SignedInfo><SignatureValue>J3woNwkli4ZZDFK/LnLk+GwWS9gJiwipctgdayAjtY46NIEqnrXWBeDFQQ0coXq1g+xIzNcSGk00
-JH8JfspBPqTvcJZ7nwA2mLppZk81vD63T6f+z8LhnIW+iVOaDRK2ukv2rztwVt70IW+nLfoszpHR
-4fCAPct3Ha95DWcWFCCwmUy96xmiJq7BDl9quxciYDDHJy8pz6zKZhO1QjR2M+uNisa+K/SCRTzv
-/pRfi1Sf6Z82NxVTaGcQJGYjqiTTcYfA8AI3/q/wHsQ3wn3v7UeFVnaz5masXprR331Zlxr4mEsW
-9fPHA9i9yYAEuawLo6nYyhrV4a0xq/k+rwX7ew==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ab8c0796-9143-4cee-b789-0163b8945f40"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+vdIc+8VJm5WwtxJYl0b3Cy7kRAgWJsDH4kx1UH6DqkKm3v2if+CL77RWDFzDehMcZ5JT0m3Ga7w
+nsixRQq04Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_fbbf425e-fe38-4272-bd2f-e22578dcbd0e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3bNk+NaSY+kIcuFO37TNHp87QzsUp5BrX9ZlfH9pFWOxZmp1SMeFlz9YrBxPDozLcIbJ5tW/r4qG
+ioVuP3G99A==</DigestValue></Reference></SignedInfo><SignatureValue>d+NrXSu0KUtA5H84aL+yCiKxUB6srHeqoUIUfKP92EpEKymJK0dEmQ5VIMlq74mvkK8pyZzpL352
+nnQwnbppHqpre1um3lMKhrqUEpE5N9PpmLV26lXAE/uN2Poyopp1ZBhgsncB2FtQWmTtzcyvzSfX
+uBjaxkDMsbRrv7JxvbBfAkCrFFtCtPQdrDUUz24lWIMR26MXLVQRvXbFOsca+CN/QUxUkwxGVmt5
+rI8wnXuu/15GtgarDxPO38TK2tGSi+sUCddHkPslh+JYRXbVmDxTqTmWNzm8vhzqPTP/XFKWmq5Y
+GQgiD1+gRbsEmXriV5m2BSczp87UF5T5FvSkFQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -572,4 +572,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a28852e4-9034-4b40-9776-86e31d7f28d0" Target="#_28dcd996-089c-4b0a-9f96-339942701f0f"><Timestamp>2018-07-20 22:25:43</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_fbbf425e-fe38-4272-bd2f-e22578dcbd0e" Target="#_ab8c0796-9143-4cee-b789-0163b8945f40"><Timestamp>2018-07-20 22:29:48</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
