@@ -1,0 +1,1787 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" framework="" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="Hostname" prompt="Hostname?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Port" prompt="Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Database" prompt="Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Username" prompt="Username?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="CountryCode" prompt="CountryCode?" promptNeeded="false" type="id_String" value="&quot;ES&quot;"/>
+    <contextParameter comment="" name="FileName_ACD" prompt="FileName_ACD?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="FileName" prompt="FileName?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IntermediateFilepathDQCheckPass" prompt="IntermediateFilepathDQCheckPass?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="S3SecretKey" prompt="S3SecretKey?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Month" prompt="Month?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="S3AccessKey" prompt="S3AccessKey?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ProxyHost" prompt="ProxyHost?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IntermediateFilepathACDIncrementalLoad" prompt="IntermediateFilepathACDIncrementalLoad?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IRDABREVpicklistcodeglobal" prompt="IRDABREVpicklistcodeglobal?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ProcessAuditTable" prompt="ProcessAuditTable?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="FilePath" prompt="FilePath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="InputFileName" prompt="InputFileName?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IntermediateFilepathACDTempLoad" prompt="IntermediateFilepathACDTempLoad?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="S3RawIRDA" prompt="S3RawIRDA?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IntermediateFilepathACDFullLoad" prompt="IntermediateFilepathACDFullLoad?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Year" prompt="Year?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="YearMonth" prompt="YearMonth?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Region" prompt="Region?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Day" prompt="Day?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ProxyPort" prompt="ProxyPort?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IntermediateFilepathL3StandardizedPath" prompt="IntermediateFilepathL3StandardizedPath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="STD_FMT_MAP_BRICK_TERRITORY" prompt="STD_FMT_MAP_BRICK_TERRITORY?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="STD_FMT_FileName" prompt="STD_FMT_FileName?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IRDA_ALIGN_EC2_geography_territory__aln" prompt="IRDA_ALIGN_EC2_geography_territory__aln?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="FileName_Lookup_Territory_Aln" prompt="FileName_Lookup_Territory_Aln?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="FileName_Lookup_Territory" prompt="FileName_Lookup_Territory?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IRDA_ALIGN_EC2_territory__aln" prompt="IRDA_ALIGN_EC2_territory__aln?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IRDA_VEEVA_EC2_Territory" prompt="IRDA_VEEVA_EC2_Territory?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="clientId" prompt="clientId?" promptNeeded="false" repositoryContextId="_ndcUoIZ6Eee17JK3hWHYwA" type="id_String" value=""/>
+    <contextParameter comment="" name="jobStream" prompt="jobStream?" promptNeeded="false" repositoryContextId="_ndcUoIZ6Eee17JK3hWHYwA" type="id_String" value="*"/>
+    <contextParameter comment="" name="ImplicitContext_Table" prompt="ImplicitContext_Table?" promptNeeded="false" type="id_String" value="IMCM_Context.Sus_ImplicitContext_Dev"/>
+  </context>
+  <context confirmationNeeded="false" name="Dev">
+    <contextParameter comment="" name="Hostname" prompt="Hostname?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Port" prompt="Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Database" prompt="Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Username" prompt="Username?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="CountryCode" prompt="CountryCode?" promptNeeded="false" type="id_String" value="&quot;ES&quot;"/>
+    <contextParameter comment="" name="FileName_ACD" prompt="FileName_ACD?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="FileName" prompt="FileName?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IntermediateFilepathDQCheckPass" prompt="IntermediateFilepathDQCheckPass?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="S3SecretKey" prompt="S3SecretKey?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Month" prompt="Month?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="S3AccessKey" prompt="S3AccessKey?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ProxyHost" prompt="ProxyHost?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IntermediateFilepathACDIncrementalLoad" prompt="IntermediateFilepathACDIncrementalLoad?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IRDABREVpicklistcodeglobal" prompt="IRDABREVpicklistcodeglobal?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ProcessAuditTable" prompt="ProcessAuditTable?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="FilePath" prompt="FilePath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="InputFileName" prompt="InputFileName?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IntermediateFilepathACDTempLoad" prompt="IntermediateFilepathACDTempLoad?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="S3RawIRDA" prompt="S3RawIRDA?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IntermediateFilepathACDFullLoad" prompt="IntermediateFilepathACDFullLoad?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Year" prompt="Year?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="YearMonth" prompt="YearMonth?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Region" prompt="Region?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Day" prompt="Day?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ProxyPort" prompt="ProxyPort?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IntermediateFilepathL3StandardizedPath" prompt="IntermediateFilepathL3StandardizedPath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="STD_FMT_MAP_BRICK_TERRITORY" prompt="STD_FMT_MAP_BRICK_TERRITORY?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="STD_FMT_FileName" prompt="STD_FMT_FileName?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IRDA_ALIGN_EC2_geography_territory__aln" prompt="IRDA_ALIGN_EC2_geography_territory__aln?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="FileName_Lookup_Territory_Aln" prompt="FileName_Lookup_Territory_Aln?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="FileName_Lookup_Territory" prompt="FileName_Lookup_Territory?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IRDA_ALIGN_EC2_territory__aln" prompt="IRDA_ALIGN_EC2_territory__aln?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IRDA_VEEVA_EC2_Territory" prompt="IRDA_VEEVA_EC2_Territory?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="clientId" prompt="clientId?" promptNeeded="false" repositoryContextId="_ndcUoIZ6Eee17JK3hWHYwA" type="id_String" value=""/>
+    <contextParameter comment="" name="jobStream" prompt="jobStream?" promptNeeded="false" repositoryContextId="_ndcUoIZ6Eee17JK3hWHYwA" type="id_String" value="*"/>
+    <contextParameter comment="" name="ImplicitContext_Table" prompt="ImplicitContext_Table?" promptNeeded="false" type="id_String" value="IMCM_Context.Sus_ImplicitContext_Dev"/>
+  </context>
+  <context confirmationNeeded="false" name="Prod">
+    <contextParameter comment="" name="Hostname" prompt="Hostname?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Port" prompt="Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Database" prompt="Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Username" prompt="Username?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="CountryCode" prompt="CountryCode?" promptNeeded="false" type="id_String" value="&quot;ES&quot;"/>
+    <contextParameter comment="" name="FileName_ACD" prompt="FileName_ACD?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="FileName" prompt="FileName?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IntermediateFilepathDQCheckPass" prompt="IntermediateFilepathDQCheckPass?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="S3SecretKey" prompt="S3SecretKey?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Month" prompt="Month?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="S3AccessKey" prompt="S3AccessKey?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ProxyHost" prompt="ProxyHost?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IntermediateFilepathACDIncrementalLoad" prompt="IntermediateFilepathACDIncrementalLoad?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IRDABREVpicklistcodeglobal" prompt="IRDABREVpicklistcodeglobal?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ProcessAuditTable" prompt="ProcessAuditTable?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="FilePath" prompt="FilePath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="InputFileName" prompt="InputFileName?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IntermediateFilepathACDTempLoad" prompt="IntermediateFilepathACDTempLoad?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="S3RawIRDA" prompt="S3RawIRDA?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IntermediateFilepathACDFullLoad" prompt="IntermediateFilepathACDFullLoad?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Year" prompt="Year?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="YearMonth" prompt="YearMonth?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Region" prompt="Region?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Day" prompt="Day?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ProxyPort" prompt="ProxyPort?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IntermediateFilepathL3StandardizedPath" prompt="IntermediateFilepathL3StandardizedPath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="STD_FMT_MAP_BRICK_TERRITORY" prompt="STD_FMT_MAP_BRICK_TERRITORY?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="STD_FMT_FileName" prompt="STD_FMT_FileName?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IRDA_ALIGN_EC2_geography_territory__aln" prompt="IRDA_ALIGN_EC2_geography_territory__aln?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="FileName_Lookup_Territory_Aln" prompt="FileName_Lookup_Territory_Aln?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="FileName_Lookup_Territory" prompt="FileName_Lookup_Territory?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IRDA_ALIGN_EC2_territory__aln" prompt="IRDA_ALIGN_EC2_territory__aln?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IRDA_VEEVA_EC2_Territory" prompt="IRDA_VEEVA_EC2_Territory?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="clientId" prompt="clientId?" promptNeeded="false" repositoryContextId="_ndcUoIZ6Eee17JK3hWHYwA" type="id_String" value=""/>
+    <contextParameter comment="" name="jobStream" prompt="jobStream?" promptNeeded="false" repositoryContextId="_ndcUoIZ6Eee17JK3hWHYwA" type="id_String" value="*"/>
+    <contextParameter comment="" name="ImplicitContext_Table" prompt="ImplicitContext_Table?" promptNeeded="false" type="id_String" value="IMCM_Context.Sus_ImplicitContext"/>
+  </context>
+  <context confirmationNeeded="false" name="QA">
+    <contextParameter comment="" name="Hostname" prompt="Hostname?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Port" prompt="Port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Database" prompt="Database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Username" prompt="Username?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="CountryCode" prompt="CountryCode?" promptNeeded="false" type="id_String" value="&quot;ES&quot;"/>
+    <contextParameter comment="" name="FileName_ACD" prompt="FileName_ACD?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="FileName" prompt="FileName?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IntermediateFilepathDQCheckPass" prompt="IntermediateFilepathDQCheckPass?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="S3SecretKey" prompt="S3SecretKey?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Month" prompt="Month?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="S3AccessKey" prompt="S3AccessKey?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ProxyHost" prompt="ProxyHost?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IntermediateFilepathACDIncrementalLoad" prompt="IntermediateFilepathACDIncrementalLoad?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IRDABREVpicklistcodeglobal" prompt="IRDABREVpicklistcodeglobal?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ProcessAuditTable" prompt="ProcessAuditTable?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="FilePath" prompt="FilePath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="InputFileName" prompt="InputFileName?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IntermediateFilepathACDTempLoad" prompt="IntermediateFilepathACDTempLoad?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="S3RawIRDA" prompt="S3RawIRDA?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IntermediateFilepathACDFullLoad" prompt="IntermediateFilepathACDFullLoad?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Year" prompt="Year?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="YearMonth" prompt="YearMonth?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Region" prompt="Region?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="Day" prompt="Day?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ProxyPort" prompt="ProxyPort?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IntermediateFilepathL3StandardizedPath" prompt="IntermediateFilepathL3StandardizedPath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="STD_FMT_MAP_BRICK_TERRITORY" prompt="STD_FMT_MAP_BRICK_TERRITORY?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="STD_FMT_FileName" prompt="STD_FMT_FileName?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IRDA_ALIGN_EC2_geography_territory__aln" prompt="IRDA_ALIGN_EC2_geography_territory__aln?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="FileName_Lookup_Territory_Aln" prompt="FileName_Lookup_Territory_Aln?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="FileName_Lookup_Territory" prompt="FileName_Lookup_Territory?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IRDA_ALIGN_EC2_territory__aln" prompt="IRDA_ALIGN_EC2_territory__aln?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="IRDA_VEEVA_EC2_Territory" prompt="IRDA_VEEVA_EC2_Territory?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="clientId" prompt="clientId?" promptNeeded="false" repositoryContextId="_ndcUoIZ6Eee17JK3hWHYwA" type="id_String" value=""/>
+    <contextParameter comment="" name="jobStream" prompt="jobStream?" promptNeeded="false" repositoryContextId="_ndcUoIZ6Eee17JK3hWHYwA" type="id_String" value="*"/>
+    <contextParameter comment="" name="ImplicitContext_Table" prompt="ImplicitContext_Table?" promptNeeded="false" type="id_String" value="IMCM_Context.Sus_ImplicitContext_Dev"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="192"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="true"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="true"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="tMysqlInput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="MYSQL_5"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;rds-imcm-global-talend-db.czijsiyqcsbd.eu-central-1.rds.amazonaws.com&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;IMCM_Context&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;admin&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="PD1ZqnPNBMpwzpjBooY3x/g1ABccWf1y"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;vImplicitContext&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/TOS/Talend-Studio-20170623_1246-V6.4.1/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_k3ZpQHoLEeidaeF2ToB76g" name="DQTechnical"/>
+    <routinesParameter id="_k2rQgHoLEeidaeF2ToB76g" name="DataMasking"/>
+    <routinesParameter id="_k1BqsHoLEeidaeF2ToB76g" name="DataOperation"/>
+    <routinesParameter id="_k3DrAHoLEeidaeF2ToB76g" name="DataQualityDependencies"/>
+    <routinesParameter id="_k25S8HoLEeidaeF2ToB76g" name="DataQuality"/>
+    <routinesParameter id="_k3PRMHoLEeidaeF2ToB76g" name="DqStringHandling"/>
+    <routinesParameter id="_k1N38HoLEeidaeF2ToB76g" name="Mathematical"/>
+    <routinesParameter id="_k1ZeIHoLEeidaeF2ToB76g" name="Numeric"/>
+    <routinesParameter id="_k1j2MHoLEeidaeF2ToB76g" name="Relational"/>
+    <routinesParameter id="_kDW9MHoLEeidaeF2ToB76g" name="SQLike"/>
+    <routinesParameter id="_k1ryAHoLEeidaeF2ToB76g" name="StringHandling"/>
+    <routinesParameter id="_k150cHoLEeidaeF2ToB76g" name="TalendDataGenerator"/>
+    <routinesParameter id="_k2GowHoLEeidaeF2ToB76g" name="TalendDate"/>
+    <routinesParameter id="_k2XHcHoLEeidaeF2ToB76g" name="TalendString"/>
+    <routinesParameter id="_mXb8oHv3EeeJ1_gePC0TOw" name="DecryptAES"/>
+    <routinesParameter id="_aiEnUHsqEeeSHrG8wvybkA" name="DecryptBase64"/>
+    <routinesParameter id="_iz2NEHsmEeeSHrG8wvybkA" name="DecryptHexa"/>
+    <routinesParameter id="_6fWNUHsLEeevwpKlCBFdGQ" name="DecryptROT13"/>
+    <routinesParameter id="_QXEK0Hv5EeeJ1_gePC0TOw" name="EncryptAES"/>
+    <routinesParameter id="_qfteAHtREee61u7xGz7I2g" name="EncryptBase64"/>
+    <routinesParameter id="_TDUPsI_DEeewW8OJIjG0YA" name="dqmChecks"/>
+    <routinesParameter id="_lBNM4KqDEeekpOsibyp2Vw" name="getChannel"/>
+    <routinesParameter id="_hA3UMHU3Eeio2OJOTK7Zxg" name="getFileSuffixGA"/>
+    <routinesParameter id="_W8NIoKqlEee0PPM6D4KXqA" name="getFileSuffix"/>
+    <routinesParameter id="_EcURQKp2Eeeb_dHT2uwbZA" name="getMonth"/>
+    <routinesParameter id="_ffE0UKpzEeeb_dHT2uwbZA" name="getURL"/>
+    <routinesParameter id="_eQ5r0KqFEeekpOsibyp2Vw" name="getVendorSource"/>
+    <routinesParameter id="_bezTgN0NEeekt-EESZvXvQ" name="DateFormat"/>
+    <routinesParameter id="_zdzRkAvkEeiYHccRBhPqmg" name="Date_Conversion"/>
+    <routinesParameter id="_vopmsIiXEee7LKGIfNsiZw" name="FiscalYear"/>
+    <routinesParameter id="_lvHlYIx_EeexhIyjwyDceA" name="GetGUID"/>
+    <routinesParameter id="_HzOpcCwtEei644u116E78A" name="Init"/>
+    <routinesParameter id="_HDvKII4UEeewW8OJIjG0YA" name="Numeric_int"/>
+    <routinesParameter id="_sOeOoOSIEeeW3_fGwu7jGg" name="routine_date_check"/>
+    <routinesParameter id="_wy78wLfwEee34NL8iLaStg" name="test1113"/>
+    <routinesParameter id="_k2itoHoLEeidaeF2ToB76g" name="TalendStringUtil"/>
+    <routinesParameter id="_aY65wJydEeiFLpM820yHzQ" name="standardize_technical_name"/>
+    <routinesParameter id="_YEmyIJy7EeiFLpM820yHzQ" name="Technical_Nme_Standardize"/>
+    <routinesParameter id="_4vS_UJy-EeiFLpM820yHzQ" name="Standardize_Technical_Name"/>
+  </parameters>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="608">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;End of Job&lt;/b&gt;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMysqlClose" componentVersion="0.102" offsetLabelX="50" offsetLabelY="0" posX="224" posY="608">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMysqlClose_1"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMysqlConnection_3"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;Close Audit DB Connection&lt;/b&gt;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMysqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMysqlConnection_3"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Hostname"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Database"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="context.Username"/>
+    <elementParameter field="PASSWORD" name="PASS" value="H3dPaI+z82Ctqh/R1zmIcOG5bmeVD15erPfnjBjBU4lq2Q4fMUgV05M/3i0oHB2x"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;Connect to Audit DB&lt;/b&gt;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="-19" offsetLabelY="-2" posX="128" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMysqlInput_3"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMysqlConnection_3"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;rds-imcm-global-talend-db.czijsiyqcsbd.eu-central-1.rds.amazonaws.com&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;IMCM_Context&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;admin&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="vPVpIvLjiedg/wg6RwwvaQ=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot; select  *  from  &quot;+context.ImplicitContext_Table+&quot;  where Country_Code='&quot;+context.CountryCode+&quot;';&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Country_Code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ImplicitKey"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ImplicitValue"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;Query to Fetch Context Values&lt;/b&gt;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMysqlInput_3">
+      <column comment="" key="false" length="-1" name="Country_Code" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ImplicitKey" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ImplicitValue" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="-12" offsetLabelY="0" posX="384" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_3"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="&#13;&#10; if (input_row.ImplicitKey.equalsIgnoreCase(&quot;Country_Code&quot;)){context.CountryCode = input_row.ImplicitValue;}&#13;&#10;else if (input_row.ImplicitKey.equalsIgnoreCase(&quot;Intermediate_Filepath_DQCheck_Pass_IRDA&quot;)){context.IntermediateFilepathDQCheckPass = input_row.ImplicitValue;}&#13;&#10;else if (input_row.ImplicitKey.equalsIgnoreCase(&quot;Intermediate_Filepath_ACD_Temp_Load&quot;)){context.IntermediateFilepathACDTempLoad = input_row.ImplicitValue;}&#13;&#10;else if &#13;&#10;&#13;&#10;(input_row.ImplicitKey.equalsIgnoreCase(&quot;Intermediate_Filepath_L3_Standardized_Path&quot;)){context.IntermediateFilepathL3StandardizedPath = input_row.ImplicitValue;}&#13;&#10;&#13;&#10;else if&#13;&#10;(input_row.ImplicitKey.equalsIgnoreCase(&quot;STD_FMT_MAP_BRICK_TERRITORY&quot;)){context.STD_FMT_MAP_BRICK_TERRITORY = input_row.ImplicitValue;}&#13;&#10;&#13;&#10;&#13;&#10;else if&#13;&#10;(input_row.ImplicitKey.equalsIgnoreCase(&quot;Intermediate_Filepath_ACD_Full_Load&quot;)){context.IntermediateFilepathACDFullLoad = input_row.ImplicitValue;}&#13;&#10;else if (input_row.ImplicitKey.equalsIgnoreCase(&quot;IRDA_ALIGN_EC2_geography_territory__aln&quot;)){context.IRDA_ALIGN_EC2_geography_territory__aln = input_row.ImplicitValue;}&#13;&#10;&#10;else if (input_row.ImplicitKey.equalsIgnoreCase(&quot;IRDA_ALIGN_EC2_territory__aln&quot;)){context.IRDA_ALIGN_EC2_territory__aln = input_row.ImplicitValue;}&#10;&#13;&#10;else if (input_row.ImplicitKey.equalsIgnoreCase(&quot;IRDA_VEEVA_EC2_Territory&quot;)){context.IRDA_VEEVA_EC2_Territory = input_row.ImplicitValue;}&#10;&#13;&#10;else {&#9;System.out.println(&quot;Context not found!&quot;);}&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;Assign values to Context&lt;/b&gt;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_3">
+      <column comment="" key="false" length="-1" name="Country_Code" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ImplicitKey" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ImplicitValue" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="&#13;&#10;// Get Year and Month &#13;&#10;Date currentDate = TalendDate.getCurrentDate();  &#13;&#10;Integer Month=TalendDate.getPartOfDate(&quot;MONTH&quot;,currentDate);&#13;&#10;if (Month&lt;=9)  &#13;&#10;context.Month= &quot;0&quot;+(1+Month) ;&#13;&#10;else&#13;&#10;context.Month= &quot;&quot; + (1+Month);&#13;&#10;context.Year=TalendDate.getPartOfDate(&quot;YEAR&quot;,currentDate);&#13;&#10;context.YearMonth = context.Year+context.Month;&#13;&#10;&#13;&#10;// File names &#13;&#10;&#13;&#10;context.FileName =  &quot;(All)(Field)(IRDA)(BY0OIWI0216)(&quot;+context.YearMonth+&quot;)(&quot;+context.IRDA_ALIGN_EC2_geography_territory__aln+&quot;).csv&quot;;&#10;&#10;context.FileName_Lookup_Territory_Aln =  &quot;(All)(Field)(IRDA)(BY0OIWI0216)(&quot;+context.YearMonth+&quot;)(&quot;+context.IRDA_ALIGN_EC2_territory__aln+&quot;).csv&quot;;&#10;&#10;context.FileName_Lookup_Territory =  &quot;(All)(Field)(IRDA)(BY0OIWI0216)(&quot;+context.YearMonth+&quot;)(&quot;+context.IRDA_VEEVA_EC2_Territory+&quot;).csv&quot;;&#10;&#13;&#10;&#13;&#10;context.FileName_ACD = context.IRDA_ALIGN_EC2_geography_territory__aln+&quot;_ACD.csv&quot;;&#13;&#10;context.STD_FMT_FileName = context.STD_FMT_MAP_BRICK_TERRITORY+&quot;.csv&quot;;&#13;&#10;&#13;&#10;&#13;&#10;System.out.println(&quot;YearMonth---------&gt;&gt;&quot; +context.YearMonth);&#13;&#10;System.out.println(&quot;Hostname---------&gt;&gt;&quot; +context.Hostname);&#13;&#10;System.out.println(&quot;Port---------&gt;&gt;&quot;+context.Port);&#13;&#10;System.out.println(&quot;Database---------&gt;&gt;&quot;+context.Database);&#13;&#10;System.out.println(&quot;Username---------&gt;&gt;&quot;+context.Username);&#13;&#10;System.out.println(&quot;Password---------&gt;&gt;&quot;+context.Password);&#13;&#10;System.out.println(&quot;CountryCode---------&gt;&gt;&quot;+context.CountryCode);&#13;&#10;System.out.println(&quot;IntermediateFilepathDQCheckPass---------&gt;&gt;&quot;+context.IntermediateFilepathDQCheckPass);&#13;&#10;System.out.println(&quot;IntermediateFilepathACDFullLoad---------&gt;&gt;&quot;+context.IntermediateFilepathACDFullLoad);&#13;&#10;System.out.println(&quot;IntermediateFilepathACDTempLoad---------&gt;&gt;&quot;+context.IntermediateFilepathACDTempLoad);&#13;&#10;System.out.println(&quot;IntermediateFilepathACDIncrementalLoad---------&gt;&gt;&quot;+context.IntermediateFilepathACDIncrementalLoad);&#13;&#10;System.out.println(&quot;IRDA_ALIGN_EC2_geography_territory__aln---------&gt;&gt;&quot;+context.IRDA_ALIGN_EC2_geography_territory__aln);&#13;&#10;System.out.println(&quot;FileName---------&gt;&gt;&quot; +context.FileName);&#13;&#10;System.out.println(&quot;FileName_ACD---------&gt;&gt;&quot; +context.FileName_ACD);&#13;&#10;System.out.println(&quot;FileName---------&gt;&gt;&quot; +context.IRDA_ALIGN_EC2_geography_territory__aln);&#10;System.out.println(&quot;FileName_Lookup_Territory_Aln---------&gt;&gt;&quot; +context.IRDA_ALIGN_EC2_territory__aln);&#10;System.out.println(&quot;FileName_Lookup_Territory---------&gt;&gt;&quot; +context.IRDA_VEEVA_EC2_Territory);&#13;&#10;&#13;&#10;System.out.println(&quot;STD_FMT_MAP_BRICK_TERRITORY---------&gt;&gt;&quot; +context.STD_FMT_MAP_BRICK_TERRITORY);&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;Use for Debugging&lt;/b&gt;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.IntermediateFilepathDQCheckPass+context.FileName"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_OVvrkJlXEeiE55vVPNfXcg - metadata"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" show="false" value="&quot;C:/Users/ETUJO/Downloads/WRK_30-07&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="RANDOM" show="false" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" show="false" value="10"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_OBJECT_GUID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_CREATED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_UPDATED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_CHANGED_BY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_TOUCHED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_COUNTRY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_DELETED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_IS_DELETED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_CORRELATION_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_IS_DIRTY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="created_by__v"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="created_date__v"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="end_date__aln"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="end_datetime__aln"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="external_id__aln"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="geography__aln"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="geography_type__aln"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="map_shape__aln"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="modified_by__v"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="modified_date__v"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="name__v"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="source__aln"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="start_date__aln"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="start_datetime__aln"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="status__v"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="territory__aln"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="territory_footprint__aln"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMCM_SYS_CREATED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMCM_SYS_UPDATED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMCM_SYS_DELETED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMCM_IS_DELETED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_OBJECT_GUID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_CREATED"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_UPDATED"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_CHANGED_BY"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_TOUCHED"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_COUNTRY"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_DELETED"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_IS_DELETED"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_CORRELATION_ID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_IS_DIRTY"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="created_by__v"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="created_date__v"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="end_date__aln"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="end_datetime__aln"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="external_id__aln"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="geography__aln"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="geography_type__aln"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="map_shape__aln"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="modified_by__v"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="modified_date__v"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="name__v"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="source__aln"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="start_date__aln"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="start_datetime__aln"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="status__v"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="territory__aln"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="territory_footprint__aln"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMCM_SYS_CREATED"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMCM_SYS_UPDATED"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMCM_SYS_DELETED"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMCM_IS_DELETED"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;Temp File --geography_territory__aln&lt;/b&gt;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_1">
+      <column comment="" key="false" length="36" name="IRDA_SYS_OBJECT_GUID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IRDA_SYS_CREATED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IRDA_SYS_UPDATED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IRDA_SYS_CHANGED_BY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IRDA_SYS_TOUCHED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="IRDA_SYS_COUNTRY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IRDA_SYS_DELETED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IRDA_SYS_IS_DELETED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IRDA_SYS_CORRELATION_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IRDA_SYS_IS_DIRTY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="created_by__v" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="created_date__v" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="end_date__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="end_datetime__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="34" name="external_id__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="geography__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="geography_type__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="map_shape__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="modified_by__v" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="modified_date__v" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="name__v" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="source__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="start_date__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="start_datetime__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="status__v" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="territory__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="territory_footprint__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IMCM_SYS_CREATED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IMCM_SYS_UPDATED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IMCM_SYS_DELETED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IMCM_IS_DELETED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="36" name="IRDA_SYS_OBJECT_GUID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IRDA_SYS_CREATED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IRDA_SYS_UPDATED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IRDA_SYS_CHANGED_BY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IRDA_SYS_TOUCHED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="IRDA_SYS_COUNTRY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IRDA_SYS_DELETED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IRDA_SYS_IS_DELETED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IRDA_SYS_CORRELATION_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IRDA_SYS_IS_DIRTY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="created_by__v" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="created_date__v" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="end_date__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="end_datetime__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="34" name="external_id__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="geography__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="geography_type__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="map_shape__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="modified_by__v" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="modified_date__v" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="name__v" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="source__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="start_date__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="start_datetime__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="status__v" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="territory__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="territory_footprint__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IMCM_SYS_CREATED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IMCM_SYS_UPDATED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IMCM_SYS_DELETED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IMCM_IS_DELETED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_ENEdUJlVEeiE55vVPNfXcg-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;Source To Target Mapping &amp; Generating GUID&lt;/b&gt;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="STD_MAP_BROCK_TERRITORY" name="STD_MAP_BRICK_TERRITORY">
+      <column comment="" key="false" length="50" name="BRICK_TERRITORY_ALIGN_KEY" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="COUNTRY_CODE" nullable="true" originalLength="2" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="BRICK_TERRITORY_ALIGN_ID" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ALIGNMENT_SOURCE_SYSTEM" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="BRICK_CODE" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="TERRITORY_KEY" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="BRICK_TERRITORY_EXT_ALIGN_ID" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ALIGNMENT_STATUS" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ALIGNMENT_DELETED_FLAG" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ALIGNMENT_START_DATE" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ALIGNMENT_END_DATE" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_CREATED_ON" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_UPDATED_ON" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="SYS_CREATED_BY" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="SYS_UPDATED_BY" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_CURRENT_FLAG" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Byte" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_DELETE_FLAG" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_EFFECTIVE_START_DATE" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_EFFECTIVE_END_DATE" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables name="Var" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="Standardize_Technical_Name.technical_name(row1.status__v) " name="var1" type="id_String"/>
+        <mapperTableEntries expression="TalendDate.parseDate(&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;,row1.created_date__v) " name="var2" type="id_Date"/>
+        <mapperTableEntries expression="TalendDate.parseDate(&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;,row1.start_datetime__aln) " name="var3" type="id_Date"/>
+        <mapperTableEntries expression="row1.IRDA_SYS_CHANGED_BY!=null ||  row1.IRDA_SYS_CHANGED_BY!=&quot;&quot; ?row1.IRDA_SYS_CHANGED_BY:&quot;&quot; " name="var4" type="id_String"/>
+        <mapperTableEntries expression="row1.source__aln!=null || row1.source__aln!=&quot;&quot; ?&#13;&#10;row1.source__aln:&quot;&quot; " name="var5" type="id_String"/>
+        <mapperTableEntries expression="Var.var4+&quot; &quot;+Var.var5 " name="var6" type="id_String"/>
+        <mapperTableEntries expression="Standardize_Technical_Name.technical_name(Var.var6) " name="var8" type="id_String"/>
+      </varTables>
+      <outputTables activateExpressionFilter="true" expressionFilter="row1.IRDA_SYS_COUNTRY!=null || row1.IRDA_SYS_COUNTRY!=&quot;&quot;" name="STD_MAP_BRICK_TERRITORY" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="" name="BRICK_TERRITORY_ALIGN_KEY" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.IRDA_SYS_COUNTRY " name="COUNTRY_CODE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.id " name="BRICK_TERRITORY_ALIGN_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.var8 " name="ALIGNMENT_SOURCE_SYSTEM" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.geography__aln " name="BRICK_CODE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.territory__aln " name="TERRITORY_KEY" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.external_id__aln  " name="BRICK_TERRITORY_EXT_ALIGN_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.var1.replaceAll(&quot;[^\\w\\s]&quot;,&quot;&quot;) " name="ALIGNMENT_STATUS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.IRDA_SYS_IS_DELETED " name="ALIGNMENT_DELETED_FLAG" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries expression="TalendDate.compareDate(Var.var2,Var.var3,&quot;yyyy-MM-dd'T'HH:mm:Ss.000'Z'&quot;)==1?Var.var3 : Var.var2 " name="ALIGNMENT_START_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="TalendDate.parseDate(&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;,row1.end_datetime__aln) " name="ALIGNMENT_END_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="TalendDate.parseDate(&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;,row1.created_date__v) " name="SYS_CREATED_ON" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="TalendDate.parseDate(&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;,row1.modified_date__v) " name="SYS_UPDATED_ON" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="jobName" name="SYS_CREATED_BY" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="jobName" name="SYS_UPDATED_BY" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="" name="SYS_CURRENT_FLAG" nullable="true" type="id_Byte"/>
+        <mapperTableEntries expression="row1.IRDA_SYS_IS_DELETED " name="SYS_DELETE_FLAG" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries expression="TalendDate.compareDate(Var.var2,Var.var3,&quot;yyyy-MM-dd'T'HH:mm:Ss.000'Z'&quot;)==1?Var.var3 : Var.var2 " name="SYS_EFFECTIVE_START_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="" name="SYS_EFFECTIVE_END_DATE" nullable="true" type="id_Date"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="IRDA_SYS_OBJECT_GUID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IRDA_SYS_CREATED" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IRDA_SYS_UPDATED" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IRDA_SYS_CHANGED_BY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IRDA_SYS_TOUCHED" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IRDA_SYS_COUNTRY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IRDA_SYS_DELETED" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IRDA_SYS_IS_DELETED" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries name="IRDA_SYS_CORRELATION_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IRDA_SYS_IS_DIRTY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="id" nullable="true" type="id_String"/>
+        <mapperTableEntries name="created_by__v" nullable="true" type="id_String"/>
+        <mapperTableEntries name="created_date__v" nullable="true" type="id_String"/>
+        <mapperTableEntries name="end_date__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries name="end_datetime__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries name="external_id__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries name="geography__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries name="geography_type__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries name="map_shape__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries name="modified_by__v" nullable="true" type="id_String"/>
+        <mapperTableEntries name="modified_date__v" nullable="true" type="id_String"/>
+        <mapperTableEntries name="name__v" nullable="true" type="id_String"/>
+        <mapperTableEntries name="source__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries name="start_date__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries name="start_datetime__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries name="status__v" nullable="true" type="id_String"/>
+        <mapperTableEntries name="territory__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries name="territory_footprint__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IMCM_SYS_CREATED" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IMCM_SYS_UPDATED" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IMCM_SYS_DELETED" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IMCM_IS_DELETED" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_3"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_ENEdUJlVEeiE55vVPNfXcg-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;Fetching Master_Align_Id__Aln&lt;/b&gt;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="STD_MAP_BROCK_TERRITORY" name="Brick_Territory_out">
+      <column comment="" key="false" length="50" name="BRICK_TERRITORY_ALIGN_KEY" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="COUNTRY_CODE" nullable="true" originalLength="2" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="BRICK_TERRITORY_ALIGN_ID" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ALIGNMENT_SOURCE_SYSTEM" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="BRICK_CODE" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="TERRITORY_KEY" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="BRICK_TERRITORY_EXT_ALIGN_ID" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ALIGNMENT_STATUS" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ALIGNMENT_DELETED_FLAG" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ALIGNMENT_START_DATE" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ALIGNMENT_END_DATE" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_CREATED_ON" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_UPDATED_ON" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="SYS_CREATED_BY" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="SYS_UPDATED_BY" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_CURRENT_FLAG" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Byte" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_DELETE_FLAG" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_EFFECTIVE_START_DATE" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_EFFECTIVE_END_DATE" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="Brick_Territory_out" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="STD_MAP_BRICK_TERRITORY.BRICK_TERRITORY_ALIGN_KEY" name="BRICK_TERRITORY_ALIGN_KEY" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="STD_MAP_BRICK_TERRITORY.COUNTRY_CODE" name="COUNTRY_CODE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="STD_MAP_BRICK_TERRITORY.BRICK_TERRITORY_ALIGN_ID" name="BRICK_TERRITORY_ALIGN_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="STD_MAP_BRICK_TERRITORY.ALIGNMENT_SOURCE_SYSTEM" name="ALIGNMENT_SOURCE_SYSTEM" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="STD_MAP_BRICK_TERRITORY.BRICK_CODE" name="BRICK_CODE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Id_out.master_align_id__aln " name="TERRITORY_KEY" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="STD_MAP_BRICK_TERRITORY.BRICK_TERRITORY_EXT_ALIGN_ID" name="BRICK_TERRITORY_EXT_ALIGN_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="STD_MAP_BRICK_TERRITORY.ALIGNMENT_STATUS" name="ALIGNMENT_STATUS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="STD_MAP_BRICK_TERRITORY.ALIGNMENT_DELETED_FLAG" name="ALIGNMENT_DELETED_FLAG" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries expression="STD_MAP_BRICK_TERRITORY.ALIGNMENT_START_DATE" name="ALIGNMENT_START_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="STD_MAP_BRICK_TERRITORY.ALIGNMENT_END_DATE" name="ALIGNMENT_END_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="STD_MAP_BRICK_TERRITORY.SYS_CREATED_ON" name="SYS_CREATED_ON" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="STD_MAP_BRICK_TERRITORY.SYS_UPDATED_ON" name="SYS_UPDATED_ON" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="STD_MAP_BRICK_TERRITORY.SYS_CREATED_BY" name="SYS_CREATED_BY" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="STD_MAP_BRICK_TERRITORY.SYS_UPDATED_BY" name="SYS_UPDATED_BY" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="STD_MAP_BRICK_TERRITORY.SYS_CURRENT_FLAG" name="SYS_CURRENT_FLAG" nullable="true" type="id_Byte"/>
+        <mapperTableEntries expression="STD_MAP_BRICK_TERRITORY.SYS_DELETE_FLAG" name="SYS_DELETE_FLAG" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries expression="STD_MAP_BRICK_TERRITORY.SYS_EFFECTIVE_START_DATE" name="SYS_EFFECTIVE_START_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="STD_MAP_BRICK_TERRITORY.SYS_EFFECTIVE_END_DATE" name="SYS_EFFECTIVE_END_DATE" nullable="true" type="id_Date"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="STD_MAP_BRICK_TERRITORY" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="BRICK_TERRITORY_ALIGN_KEY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="COUNTRY_CODE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="BRICK_TERRITORY_ALIGN_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ALIGNMENT_SOURCE_SYSTEM" nullable="true" type="id_String"/>
+        <mapperTableEntries name="BRICK_CODE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TERRITORY_KEY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="BRICK_TERRITORY_EXT_ALIGN_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ALIGNMENT_STATUS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ALIGNMENT_DELETED_FLAG" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries name="ALIGNMENT_START_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="ALIGNMENT_END_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="SYS_CREATED_ON" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="SYS_UPDATED_ON" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="SYS_CREATED_BY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SYS_UPDATED_BY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SYS_CURRENT_FLAG" nullable="true" type="id_Byte"/>
+        <mapperTableEntries name="SYS_DELETE_FLAG" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries name="SYS_EFFECTIVE_START_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="SYS_EFFECTIVE_END_DATE" nullable="true" type="id_Date"/>
+      </inputTables>
+      <inputTables activateCondensedTool="true" innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="Id_out" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="STD_MAP_BRICK_TERRITORY.TERRITORY_KEY" name="id" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="" name="master_align_id__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="STD_MAP_BRICK_TERRITORY.COUNTRY_CODE" name="IRDA_SYS_COUNTRY" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_ENEdUJlVEeiE55vVPNfXcg-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Id_out" name="Id_out">
+      <column comment="" key="false" length="15" name="id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="master_align_id__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="IRDA_SYS_COUNTRY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables activateExpressionFilter="true" expressionFilter="row2.IRDA_SYS_COUNTRY!=null &amp;&amp;  (row2.crm_is_deleted__aln.equals(&quot;0&quot;) ||row2.crm_is_deleted__aln==null || row2.crm_is_deleted__aln.equals(&quot;&quot;))" name="Id_out" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row2.id " name="id" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.master_align_id__aln " name="master_align_id__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.IRDA_SYS_COUNTRY " name="IRDA_SYS_COUNTRY" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="IRDA_SYS_OBJECT_GUID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IRDA_SYS_CREATED" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IRDA_SYS_UPDATED" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IRDA_SYS_CHANGED_BY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IRDA_SYS_TOUCHED" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IRDA_SYS_COUNTRY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IRDA_SYS_DELETED" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IRDA_SYS_IS_DELETED" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="IRDA_SYS_CORRELATION_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IRDA_SYS_IS_DIRTY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="id" nullable="true" type="id_String"/>
+        <mapperTableEntries name="country__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries name="created_by__v" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="created_date__v" nullable="true" type="id_String"/>
+        <mapperTableEntries name="crm_account_access__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries name="crm_is_deleted__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries name="description__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries name="effective_datetime__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries name="end_date__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries name="end_datetime__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries name="external_id__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries name="field_force__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries name="hierarchy_level__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries name="master_align_id__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries name="modified_by__v" nullable="true" type="id_String"/>
+        <mapperTableEntries name="modified_date__v" nullable="true" type="id_String"/>
+        <mapperTableEntries name="name__v" nullable="true" type="id_String"/>
+        <mapperTableEntries name="parent_territory__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries name="send_to_crm__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries name="start_date__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries name="start_datetime__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries name="status__v" nullable="true" type="id_String"/>
+        <mapperTableEntries name="veeva_crm_org__aln" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IMCM_SYS_CREATED" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IMCM_SYS_UPDATED" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IMCM_SYS_DELETED" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IMCM_IS_DELETED" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_6"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_ENEdUJlVEeiE55vVPNfXcg-tMap_6-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;Fetching Id&lt;/b&gt;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="STD_MAP_BROCK_TERRITORY" name="Brick_Territory_out1">
+      <column comment="" key="false" length="50" name="BRICK_TERRITORY_ALIGN_KEY" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="COUNTRY_CODE" nullable="true" originalLength="2" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="BRICK_TERRITORY_ALIGN_ID" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ALIGNMENT_SOURCE_SYSTEM" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="BRICK_CODE" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="TERRITORY_KEY" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="BRICK_TERRITORY_EXT_ALIGN_ID" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ALIGNMENT_STATUS" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ALIGNMENT_DELETED_FLAG" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ALIGNMENT_START_DATE" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ALIGNMENT_END_DATE" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_CREATED_ON" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_UPDATED_ON" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="SYS_CREATED_BY" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="SYS_UPDATED_BY" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_CURRENT_FLAG" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Byte" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_DELETE_FLAG" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_EFFECTIVE_START_DATE" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_EFFECTIVE_END_DATE" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="Brick_Territory_out1" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="routines.GetGUID.getGUID() " name="BRICK_TERRITORY_ALIGN_KEY" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Brick_Territory_out.COUNTRY_CODE" name="COUNTRY_CODE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Brick_Territory_out.BRICK_TERRITORY_ALIGN_ID" name="BRICK_TERRITORY_ALIGN_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Brick_Territory_out.ALIGNMENT_SOURCE_SYSTEM" name="ALIGNMENT_SOURCE_SYSTEM" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Brick_Territory_out.BRICK_CODE  " name="BRICK_CODE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Id_out1.Id " name="TERRITORY_KEY" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Brick_Territory_out.BRICK_TERRITORY_EXT_ALIGN_ID" name="BRICK_TERRITORY_EXT_ALIGN_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Brick_Territory_out.ALIGNMENT_STATUS" name="ALIGNMENT_STATUS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Brick_Territory_out.ALIGNMENT_DELETED_FLAG" name="ALIGNMENT_DELETED_FLAG" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries expression="Brick_Territory_out.ALIGNMENT_START_DATE" name="ALIGNMENT_START_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="Brick_Territory_out.ALIGNMENT_END_DATE" name="ALIGNMENT_END_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="Brick_Territory_out.SYS_CREATED_ON" name="SYS_CREATED_ON" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="Brick_Territory_out.SYS_UPDATED_ON" name="SYS_UPDATED_ON" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="Brick_Territory_out.SYS_CREATED_BY" name="SYS_CREATED_BY" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Brick_Territory_out.SYS_UPDATED_BY" name="SYS_UPDATED_BY" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Brick_Territory_out.SYS_CURRENT_FLAG" name="SYS_CURRENT_FLAG" nullable="true" type="id_Byte"/>
+        <mapperTableEntries expression="Brick_Territory_out.SYS_DELETE_FLAG" name="SYS_DELETE_FLAG" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries expression="Brick_Territory_out.SYS_EFFECTIVE_START_DATE" name="SYS_EFFECTIVE_START_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="Brick_Territory_out.SYS_EFFECTIVE_END_DATE" name="SYS_EFFECTIVE_END_DATE" nullable="true" type="id_Date"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="Brick_Territory_out" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="BRICK_TERRITORY_ALIGN_KEY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="COUNTRY_CODE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="BRICK_TERRITORY_ALIGN_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ALIGNMENT_SOURCE_SYSTEM" nullable="true" type="id_String"/>
+        <mapperTableEntries name="BRICK_CODE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TERRITORY_KEY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="BRICK_TERRITORY_EXT_ALIGN_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ALIGNMENT_STATUS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ALIGNMENT_DELETED_FLAG" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries name="ALIGNMENT_START_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="ALIGNMENT_END_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="SYS_CREATED_ON" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="SYS_UPDATED_ON" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="SYS_CREATED_BY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SYS_UPDATED_BY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SYS_CURRENT_FLAG" nullable="true" type="id_Byte"/>
+        <mapperTableEntries name="SYS_DELETE_FLAG" nullable="true" type="id_Boolean"/>
+        <mapperTableEntries name="SYS_EFFECTIVE_START_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="SYS_EFFECTIVE_END_DATE" nullable="true" type="id_Date"/>
+      </inputTables>
+      <inputTables activateCondensedTool="true" innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="Id_out1" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="Brick_Territory_out.TERRITORY_KEY" name="Master_Align_Id_vod__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Id" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_5"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_ENEdUJlVEeiE55vVPNfXcg-tMap_5-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Id_out" name="Id_out1">
+      <column comment="" key="false" length="36" name="Master_Align_Id_vod__c" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables activateExpressionFilter="true" expressionFilter="row3.Master_Align_Id_vod__c!=null" name="Id_out1" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row3.Master_Align_Id_vod__c " name="Master_Align_Id_vod__c" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.Id " name="Id" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="IRDA_SYS_OBJECT_GUID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IRDA_SYS_CREATED" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IRDA_SYS_UPDATED" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IRDA_SYS_CHANGED_BY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IRDA_SYS_TOUCHED" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IRDA_SYS_COUNTRY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IRDA_SYS_DELETED" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IRDA_SYS_IS_DELETED" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IRDA_SYS_CORRELATION_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IRDA_SYS_IS_DIRTY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Id" nullable="true" type="id_String"/>
+        <mapperTableEntries name="AccountAccessLevel" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CaseAccessLevel" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ContactAccessLevel" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CurrencyIsoCode" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Description" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DeveloperName" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ForecastUserId" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LastModifiedById" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LastModifiedDate" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Master_Align_Id_vod__c" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MayForecastManagerShare" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="OpportunityAccessLevel" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ParentTerritoryId" nullable="true" type="id_String"/>
+        <mapperTableEntries name="RestrictOpportunityTransfer" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SystemModstamp" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IMCM_SYS_CREATED" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IMCM_SYS_UPDATED" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IMCM_SYS_DELETED" nullable="true" type="id_String"/>
+        <mapperTableEntries name="IMCM_IS_DELETED" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.IntermediateFilepathL3StandardizedPath+context.STD_FMT_FileName"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="STD_MAP_BROCK_TERRITORY" name="tFileOutputDelimited_1">
+      <column comment="" key="false" length="50" name="BRICK_TERRITORY_ALIGN_KEY" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="COUNTRY_CODE" nullable="true" originalLength="2" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="BRICK_TERRITORY_ALIGN_ID" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ALIGNMENT_SOURCE_SYSTEM" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="BRICK_CODE" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="TERRITORY_KEY" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="BRICK_TERRITORY_EXT_ALIGN_ID" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ALIGNMENT_STATUS" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ALIGNMENT_DELETED_FLAG" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ALIGNMENT_START_DATE" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ALIGNMENT_END_DATE" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_CREATED_ON" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_UPDATED_ON" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="SYS_CREATED_BY" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="SYS_UPDATED_BY" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_CURRENT_FLAG" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Byte" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_DELETE_FLAG" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_EFFECTIVE_START_DATE" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_EFFECTIVE_END_DATE" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLog" componentVersion="1.17" offsetLabelX="0" offsetLabelY="0" posX="1376" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLog_2"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="info"/>
+    <elementParameter field="RADIO" name="CLASS_TECHNICAL" value="false"/>
+    <elementParameter field="RADIO" name="CLASS_FUNCTIONAL" value="false"/>
+    <elementParameter field="RADIO" name="CLASS_NONE" value="true"/>
+    <elementParameter field="RADIO" name="CLASS_CUSTOM" value="false"/>
+    <elementParameter field="TEXT" name="CLASS_CUSTOM_TEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="RADIO" name="ACTION_READ" value="true"/>
+    <elementParameter field="RADIO" name="ACTION_PROCESS" value="false"/>
+    <elementParameter field="RADIO" name="ACTION_CREATE" value="false"/>
+    <elementParameter field="RADIO" name="ACTION_UPDATE" value="false"/>
+    <elementParameter field="RADIO" name="ACTION_DELETE" value="false"/>
+    <elementParameter field="RADIO" name="ACTION_NONE" value="false"/>
+    <elementParameter field="RADIO" name="ACTION_CUSTOM" value="false"/>
+    <elementParameter field="TEXT" name="ACTION_CUSTOM_TEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="LOG_USE_PLACEHOLDER" show="false" value="false"/>
+    <elementParameter field="TABLE" name="LOG_PLACEHOLDER" show="false"/>
+    <elementParameter field="TABLE" name="MDC_SCHEMA_LIST">
+      <elementValue elementRef="LOG_MDC_KEY" value="&quot;Country_Code&quot;"/>
+      <elementValue elementRef="LOG_MDC_VALUE" value="COUNTRY_CODE"/>
+      <elementValue elementRef="LOG_MDC_GLOBAL" value="false"/>
+      <elementValue elementRef="LOG_MDC_KEY" value="&quot;Record_Count&quot;"/>
+      <elementValue elementRef="LOG_MDC_VALUE" value="BRICK_TERRITORY_ALIGN_KEY"/>
+      <elementValue elementRef="LOG_MDC_GLOBAL" value="false"/>
+      <elementValue elementRef="LOG_MDC_KEY" value="&quot;job_Name&quot;"/>
+      <elementValue elementRef="LOG_MDC_VALUE" value="SYS_CREATED_BY"/>
+      <elementValue elementRef="LOG_MDC_GLOBAL" value="false"/>
+    </elementParameter>
+    <elementParameter field="LABEL" name="RELEASE_VERSION" value=""/>
+    <elementParameter field="TABLE" name="MDC_CUSTOM_LIST"/>
+    <elementParameter field="CHECK" name="MDC_CLEAR_ALL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLog_2">
+      <column comment="" key="false" length="50" name="BRICK_TERRITORY_ALIGN_KEY" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="COUNTRY_CODE" nullable="true" originalLength="2" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="BRICK_TERRITORY_ALIGN_ID" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ALIGNMENT_SOURCE_SYSTEM" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="BRICK_CODE" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="TERRITORY_KEY" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="BRICK_TERRITORY_EXT_ALIGN_ID" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ALIGNMENT_STATUS" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ALIGNMENT_DELETED_FLAG" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ALIGNMENT_START_DATE" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ALIGNMENT_END_DATE" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_CREATED_ON" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_UPDATED_ON" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="SYS_CREATED_BY" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="SYS_UPDATED_BY" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_CURRENT_FLAG" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Byte" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_DELETE_FLAG" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_EFFECTIVE_START_DATE" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SYS_EFFECTIVE_END_DATE" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.'000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_2"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.IntermediateFilepathDQCheckPass+context.FileName_Lookup_Territory_Aln"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_Rk57kJuOEeiEdZ9Yl0-B9w - metadata"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" show="false" value="&quot;C:/Users/ETUJO/Downloads/WRK_30-07&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="RANDOM" show="false" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" show="false" value="10"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="true"/>
+    <elementParameter field="TABLE" name="TRIMSELECT" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_OBJECT_GUID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_CREATED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_UPDATED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_CHANGED_BY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_TOUCHED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_COUNTRY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_DELETED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_IS_DELETED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_CORRELATION_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_IS_DIRTY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country__aln"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="created_by__v"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="created_date__v"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="crm_account_access__aln"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="crm_is_deleted__aln"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="description__aln"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="effective_datetime__aln"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="end_date__aln"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="end_datetime__aln"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="external_id__aln"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="field_force__aln"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hierarchy_level__aln"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="master_align_id__aln"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="modified_by__v"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="modified_date__v"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="name__v"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="parent_territory__aln"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="send_to_crm__aln"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="start_date__aln"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="start_datetime__aln"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="status__v"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="veeva_crm_org__aln"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMCM_SYS_CREATED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMCM_SYS_UPDATED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMCM_SYS_DELETED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMCM_IS_DELETED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_OBJECT_GUID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_CREATED"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_UPDATED"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_CHANGED_BY"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_TOUCHED"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_COUNTRY"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_DELETED"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_IS_DELETED"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_CORRELATION_ID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_IS_DIRTY"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country__aln"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="created_by__v"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="created_date__v"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="crm_account_access__aln"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="crm_is_deleted__aln"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="description__aln"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="effective_datetime__aln"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="end_date__aln"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="end_datetime__aln"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="external_id__aln"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="field_force__aln"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hierarchy_level__aln"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="master_align_id__aln"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="modified_by__v"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="modified_date__v"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="name__v"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="parent_territory__aln"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="send_to_crm__aln"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="start_date__aln"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="start_datetime__aln"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="status__v"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="veeva_crm_org__aln"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMCM_SYS_CREATED"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMCM_SYS_UPDATED"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMCM_SYS_DELETED"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMCM_IS_DELETED"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="LABEL" value="Territory_Aln"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_2">
+      <column comment="" key="false" length="36" name="IRDA_SYS_OBJECT_GUID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IRDA_SYS_CREATED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IRDA_SYS_UPDATED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IRDA_SYS_CHANGED_BY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IRDA_SYS_TOUCHED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="IRDA_SYS_COUNTRY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IRDA_SYS_DELETED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="IRDA_SYS_IS_DELETED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IRDA_SYS_CORRELATION_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IRDA_SYS_IS_DIRTY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="country__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="created_by__v" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="created_date__v" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="crm_account_access__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="crm_is_deleted__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="description__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="effective_datetime__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="end_date__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="end_datetime__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="external_id__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="field_force__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="hierarchy_level__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="master_align_id__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="modified_by__v" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="modified_date__v" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="name__v" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="parent_territory__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="send_to_crm__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="start_date__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="start_datetime__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="status__v" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="veeva_crm_org__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IMCM_SYS_CREATED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IMCM_SYS_UPDATED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IMCM_SYS_DELETED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IMCM_IS_DELETED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="36" name="IRDA_SYS_OBJECT_GUID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IRDA_SYS_CREATED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IRDA_SYS_UPDATED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="IRDA_SYS_CHANGED_BY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IRDA_SYS_TOUCHED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="IRDA_SYS_COUNTRY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IRDA_SYS_DELETED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="IRDA_SYS_IS_DELETED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IRDA_SYS_CORRELATION_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IRDA_SYS_IS_DIRTY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="country__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="created_by__v" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="created_date__v" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="crm_account_access__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="crm_is_deleted__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="description__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="effective_datetime__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="end_date__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="end_datetime__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="external_id__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="field_force__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="hierarchy_level__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="master_align_id__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="modified_by__v" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="modified_date__v" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="name__v" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="parent_territory__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="send_to_crm__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="start_date__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="start_datetime__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="status__v" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="veeva_crm_org__aln" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IMCM_SYS_CREATED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IMCM_SYS_UPDATED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IMCM_SYS_DELETED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IMCM_IS_DELETED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_5"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.IntermediateFilepathDQCheckPass+context.FileName_Lookup_Territory"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_dLiMYJvOEeiEdZ9Yl0-B9w - metadata"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_dLiMYJvOEeiEdZ9Yl0-B9w - metadata"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" show="false" value="&quot;C:/Users/ETUJO/Downloads/WRK_30-07&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="RANDOM" show="false" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" show="false" value="10"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="true"/>
+    <elementParameter field="TABLE" name="TRIMSELECT" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_OBJECT_GUID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_CREATED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_UPDATED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_CHANGED_BY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_TOUCHED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_COUNTRY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_DELETED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_IS_DELETED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_CORRELATION_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_IS_DIRTY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AccountAccessLevel"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CaseAccessLevel"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ContactAccessLevel"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CurrencyIsoCode"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Description"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DeveloperName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ForecastUserId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastModifiedById"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastModifiedDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Master_Align_Id_vod__c"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MayForecastManagerShare"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OpportunityAccessLevel"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ParentTerritoryId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RestrictOpportunityTransfer"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SystemModstamp"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMCM_SYS_CREATED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMCM_SYS_UPDATED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMCM_SYS_DELETED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMCM_IS_DELETED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_OBJECT_GUID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_CREATED"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_UPDATED"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_CHANGED_BY"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_TOUCHED"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_COUNTRY"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_DELETED"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_IS_DELETED"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_CORRELATION_ID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRDA_SYS_IS_DIRTY"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AccountAccessLevel"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CaseAccessLevel"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ContactAccessLevel"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CurrencyIsoCode"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Description"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DeveloperName"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ForecastUserId"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastModifiedById"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastModifiedDate"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Master_Align_Id_vod__c"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MayForecastManagerShare"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OpportunityAccessLevel"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ParentTerritoryId"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RestrictOpportunityTransfer"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SystemModstamp"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMCM_SYS_CREATED"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMCM_SYS_UPDATED"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMCM_SYS_DELETED"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMCM_IS_DELETED"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="LABEL" value="Territory"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_5">
+      <column comment="" key="false" length="36" name="IRDA_SYS_OBJECT_GUID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IRDA_SYS_CREATED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IRDA_SYS_UPDATED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="IRDA_SYS_CHANGED_BY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IRDA_SYS_TOUCHED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="IRDA_SYS_COUNTRY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IRDA_SYS_DELETED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IRDA_SYS_IS_DELETED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IRDA_SYS_CORRELATION_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IRDA_SYS_IS_DIRTY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="AccountAccessLevel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="CaseAccessLevel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="ContactAccessLevel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyIsoCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="29" name="Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="DeveloperName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ForecastUserId" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="LastModifiedById" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LastModifiedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="Master_Align_Id_vod__c" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MayForecastManagerShare" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="OpportunityAccessLevel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="ParentTerritoryId" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RestrictOpportunityTransfer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="SystemModstamp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IMCM_SYS_CREATED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IMCM_SYS_UPDATED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IMCM_SYS_DELETED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IMCM_IS_DELETED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="36" name="IRDA_SYS_OBJECT_GUID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IRDA_SYS_CREATED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IRDA_SYS_UPDATED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="IRDA_SYS_CHANGED_BY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IRDA_SYS_TOUCHED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="IRDA_SYS_COUNTRY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IRDA_SYS_DELETED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IRDA_SYS_IS_DELETED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IRDA_SYS_CORRELATION_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IRDA_SYS_IS_DIRTY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="AccountAccessLevel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="CaseAccessLevel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="ContactAccessLevel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CurrencyIsoCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="29" name="Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="DeveloperName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ForecastUserId" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="LastModifiedById" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LastModifiedDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="Master_Align_Id_vod__c" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MayForecastManagerShare" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="OpportunityAccessLevel" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="ParentTerritoryId" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RestrictOpportunityTransfer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="SystemModstamp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IMCM_SYS_CREATED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IMCM_SYS_UPDATED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IMCM_SYS_DELETED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IMCM_IS_DELETED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="MS_BAYER_TALEND_CORE:Bootstrapper" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="-96" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Bootstrapper_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" show="false" value="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="START" show="false" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="MS_BAYER_TALEND_CORE:Bootstrapper"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tMysqlClose_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMysqlConnection_3" offsetLabelX="0" offsetLabelY="0" source="tMysqlConnection_3" target="tMysqlInput_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tMysqlInput_3" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_3" target="tJavaRow_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="ImplicitValue"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMysqlInput_3" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_3" target="tFileInputDelimited_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaRow_3" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_3" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk4"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="STD_MAP_BRICK_TERRITORY" lineStyle="0" metaname="STD_MAP_BRICK_TERRITORY" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="STD_MAP_BRICK_TERRITORY"/>
+  </connection>
+  <connection connectorName="FLOW" label="Brick_Territory_out" lineStyle="0" metaname="Brick_Territory_out" offsetLabelX="-15" offsetLabelY="0" source="tMap_3" target="tMap_6">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Brick_Territory_out"/>
+  </connection>
+  <connection connectorName="FLOW" label="Id_out" lineStyle="8" metaname="Id_out" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMap_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="IRDA_SYS_COUNTRY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Id_out"/>
+  </connection>
+  <connection connectorName="FLOW" label="Brick_Territory_out1" lineStyle="0" metaname="Brick_Territory_out1" offsetLabelX="0" offsetLabelY="0" source="tMap_6" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Brick_Territory_out1"/>
+  </connection>
+  <connection connectorName="FLOW" label="Id_out1" lineStyle="8" metaname="Id_out1" offsetLabelX="0" offsetLabelY="0" source="tMap_5" target="tMap_6">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Master_Align_Id_vod__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Id_out1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tFileOutputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileOutputDelimited_1" target="tLog_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tFileInputDelimited_5" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_5" target="tMap_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="TRIGGER_OUTPUT_2" label="OnSubjobOk (TRIGGER_OUTPUT_2)" lineStyle="1" metaname="Bootstrapper_1" offsetLabelX="0" offsetLabelY="0" source="Bootstrapper_1" target="tMysqlConnection_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk5"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMysqlClose_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMysqlConnection_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMysqlInput_3"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Fetch Context Values from Implicit Context Table"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;128;128"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="SourceToTargetMapping"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Bootstrapper_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_aded70a7-5f01-41bf-8167-48942b8163d6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/6Hj5N9jIi8PhArqqHEK6THynRPfGvkbH+iXQxMc93BhOYtjiR6CnGKq0HZ2gPM6mmCavH/uXK65
+PHAF/wH8yg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c4ecf43b-3510-46aa-8080-6139d332af4e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bxwogNJGLpOACbCBmRnfZblkWxRA9g9laWkCdXEoidiyNtFjouCSJd+1qGPn8CjRWvY3fEGaKpCR
+7Q3jOhTo7Q==</DigestValue></Reference></SignedInfo><SignatureValue>voDBXynSgA1SKntchzJfhFZOeXyYWVbn9LgKMScVxW+ckPli5OLsf0HzI4SGdxpx7vAeWfNKhkWZ
+4a4IR+P5U6pJ9dMp83ZQdu25QWPC0bdqdE8HV4eTsq2a+onzE82q6hLDu3LHSBLRr+W1qHKub2XI
+obBKIxZaewgKoFQKTKYO9NFYZvQ7yRFIzWP9gaY+fUOOUbTD6tFCPZLHINo2hdqWahVLITKoxOT+
+SVX57OLL5MKVMTlJs1/XW7LABlk5hmfqB9Ac5U4OY8tvUffk5JIroWIUQhkxZeDEJr/z10SpGxfJ
+CAE77iR0SKkcwsdgpk3XgWDLPpwIfuuFsgIUMA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c4ecf43b-3510-46aa-8080-6139d332af4e" Target="#_aded70a7-5f01-41bf-8167-48942b8163d6"><Timestamp>2018-08-22 17:01:15</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
