@@ -9,9 +9,9 @@
     <relativePath>../../../</relativePath>
   </parent>
   <groupId>org.example.psl_group_poc.job</groupId>
-  <artifactId>Consumer_MatchMerge</artifactId>
+  <artifactId>test</artifactId>
   <version>0.1.0</version>
-  <name>PSL_GROUP_POC Consumer_MatchMerge-0.1.0 (0.1,Big Data Batch)</name>
+  <name>PSL_GROUP_POC test-0.1.0 (0.1,Job Designs)</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
@@ -19,11 +19,11 @@
     <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
     <talend.job.version>0.1</talend.job.version>
     <talend.project.name.lowercase>psl_group_poc</talend.project.name.lowercase>
-    <talend.job.path>psl_group_poc/consumer_matchmerge_0_1</talend.job.path>
+    <talend.job.path>psl_group_poc/test_0_1</talend.job.path>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>PSL_GROUP_POC</talend.project.name>
     <talend.product.version>7.0.1.20180411_1414</talend.product.version>
-    <talend.job.finalName>consumer_matchmerge_0_1</talend.job.finalName>
+    <talend.job.finalName>test_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.psl_group_poc.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.psl_group_poc.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
@@ -33,11 +33,11 @@
     <talend.job.stat>true</talend.job.stat>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>Consumer_MatchMerge</talend.job.name>
-    <talend.job.id>_s-LBwKceEeiB25h-AVlWeA</talend.job.id>
+    <talend.job.name>test</talend.job.name>
+    <talend.job.id>_xMwPIKcrEeiM_aED-j3VDw</talend.job.id>
     <talend.project.id>0</talend.project.id>
-    <talend.job.framework>MapReduce</talend.job.framework>
-    <talend.job.type>Big_Data_Batch</talend.job.type>
+    <talend.job.framework></talend.job.framework>
+    <talend.job.type>Standard</talend.job.type>
   </properties>
   <dependencies>
     <dependency>
@@ -47,182 +47,7 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>avro-1.7.6-cdh5.10.1</artifactId>
-      <version>6.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>avro-1.7.7</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>avro-mapred-1.7.6-cdh5.10.1-hadoop2</artifactId>
-      <version>6.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>avro-mapred-1.7.7</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>commons-cli-1.2</artifactId>
-      <version>6.4.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>commons-codec-1.9</artifactId>
-      <version>6.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>commons-collections-3.2.2</artifactId>
-      <version>6.2.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>commons-configuration-1.6</artifactId>
-      <version>6.4.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>commons-httpclient-3.0.1</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>commons-io-2.4</artifactId>
-      <version>6.4.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>commons-lang-2.6</artifactId>
-      <version>6.4.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>commons-logging-1.2</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
       <artifactId>dom4j-1.6.1</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>guava-12.0.1</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>hadoop-auth-2.6.0-cdh5.10.1</artifactId>
-      <version>6.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>hadoop-common-2.6.0-cdh5.10.1</artifactId>
-      <version>6.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>hadoop-conf-ArthaCluster</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>hadoop-hdfs-2.6.0-cdh5.10.1</artifactId>
-      <version>6.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>hadoop-mapreduce-client-common-2.6.0-cdh5.10.1</artifactId>
-      <version>6.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>hadoop-mapreduce-client-core-2.6.0-cdh5.10.1</artifactId>
-      <version>6.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>hadoop-mapreduce-client-jobclient-2.6.0-cdh5.10.1</artifactId>
-      <version>6.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>hadoop-yarn-api-2.6.0-cdh5.10.1</artifactId>
-      <version>6.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>hadoop-yarn-client-2.6.0-cdh5.10.1</artifactId>
-      <version>6.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>hadoop-yarn-common-2.6.0-cdh5.10.1</artifactId>
-      <version>6.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>hadoop-yarn-server-web-proxy-2.6.0-cdh5.10.1</artifactId>
-      <version>6.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>htrace-core-3.2.0-incubating</artifactId>
-      <version>6.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>htrace-core4-4.0.1-incubating</artifactId>
-      <version>6.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>httpclient-4.5.2</artifactId>
-      <version>6.4.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>httpcore-4.4.4</artifactId>
-      <version>6.4.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>jackson-core-asl-1.9.14-TALEND</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>jackson-jaxrs-1.9.13</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>jackson-mapper-asl-1.9.14-TALEND</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>jackson-xc-1.9.13</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>jersey-client-1.9</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>jersey-core-1.9</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>jodd-core-3.5.2</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
@@ -232,48 +57,8 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>log4j-1.2.17</artifactId>
-      <version>6.4.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
       <artifactId>org.talend.dataquality.parser</artifactId>
       <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>parquet-hadoop-bundle-1.5.0-cdh5.10.1</artifactId>
-      <version>6.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>protobuf-java-2.5.0</artifactId>
-      <version>6.4.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>servlet-api-2.5</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>slf4j-api-1.7.5</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>slf4j-log4j12-1.7.5</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>snappy-java-1.0.4.1</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>talend-mapred-lib</artifactId>
-      <version>6.0.2.3</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
