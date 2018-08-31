@@ -27,7 +27,7 @@
     <talend.pigudf.groupid>org.example.idh_cloudera.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.idh_cloudera.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
-    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
+    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dhadoop.home="C:\tmp\winutils\bin" -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.project.branch>master</talend.project.branch>
     <talend.job.context>Default</talend.job.context>
     <talend.job.stat>true</talend.job.stat>
@@ -72,11 +72,6 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>jtds-1.3.1-patch</artifactId>
-      <version>6.1.1</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
       <artifactId>log4j-1.2.15</artifactId>
       <version>6.0.0</version>
     </dependency>
@@ -108,11 +103,6 @@
     <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>poi-scratchpad-3.16-20170419</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>talend_DB_mssqlUtil-1.2-20171017</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
