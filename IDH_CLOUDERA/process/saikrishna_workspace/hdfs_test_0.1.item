@@ -221,8 +221,6 @@
     <elementParameter field="LABEL" name="NOTE_COMMANDINE" show="false" value="The available options are based on Sqoop 1.4.4. If you use&#10;&#9;&#9;&#9;&#9;an earlier version, read the Sqoop documentation in order to find&#10;&#9;&#9;&#9;&#9;those which are not available.&#10;&#9;&#9;&#9;"/>
     <elementParameter field="RADIO" name="USE_COMMANDLINE" value="false"/>
     <elementParameter field="RADIO" name="USE_JAVAAPI" value="true"/>
-    <elementParameter field="TECHNICAL" name="HADOOP_PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="HADOOP_PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_K6cp0IBzEeijGKVo_WCcqQ"/>
     <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="CLOUDERA"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="Cloudera_CDH5_10"/>
     <elementParameter field="HADOOP_DISTRIBUTION" name="SQOOP" value=""/>
@@ -252,7 +250,7 @@
     <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" show="false" value="0RMsyjmybrE="/>
     <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" show="false" value="&quot;demo.mapr.com&quot;"/>
     <elementParameter field="TEXT" name="MAPRTICKET_DURATION" show="false" value=""/>
-    <elementParameter field="TEXT" name="HADOOP_USER" value="&quot;hdfs&quot;"/>
+    <elementParameter field="TEXT" name="HADOOP_USER" value="&quot;root&quot;"/>
     <elementParameter field="TEXT" name="CONNECTION" value="&quot;jdbc:mysql://10.0.0.25/hue&quot;"/>
     <elementParameter field="TEXT" name="USERNAME" value="&quot;developer&quot;"/>
     <elementParameter field="CHECK" name="PASSWORD_STORED_IN_FILE" value="false"/>
@@ -262,7 +260,7 @@
     <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TABLE" value="&quot;useradmin_userprofile&quot;"/>
     <elementParameter field="CLOSED_LIST" name="FILE_FORMAT" value="textfile"/>
-    <elementParameter field="CHECK" name="DELETE_TARGET_DIR" value="false"/>
+    <elementParameter field="CHECK" name="DELETE_TARGET_DIR" value="true"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
     <elementParameter field="CHECK" name="COMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DEFINE_HADOOP_CODEC" show="false" value="false"/>
@@ -278,7 +276,7 @@
     <elementParameter field="MEMO_SQL" name="QUERY" show="false" value="&quot;select id, name from employee where $CONDITIONS&quot;"/>
     <elementParameter field="LABEL" name="QUERY_LABEL" show="false" value="When importing a free-form query, you must specify a&#10;&#9;&#9;&#9;&#9;destination directory. If you want to import the results of a query&#10;&#9;&#9;&#9;&#9;in parallel, you must select a splitting column with --split-by&#10;&#9;&#9;&#9;"/>
     <elementParameter field="CHECK" name="USE_TARGET" value="true"/>
-    <elementParameter field="TEXT" name="TARGET" value="&quot;/user/laxmi/sqoopimport&quot;"/>
+    <elementParameter field="TEXT" name="TARGET" value="&quot;/talend/sqoopimport&quot;"/>
     <elementParameter field="CHECK" name="USE_SPLIT" value="false"/>
     <elementParameter field="TEXT" name="SPLIT" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_MAPPERS" value="false"/>
@@ -351,13 +349,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_73cc5de2-1fe0-4c83-8dbb-8a26483ab8f5"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Eu27wiAEYQoNSwJkZVKfXvJjFsSIa/xR7k+9CFgV1EapM3pf/1XpY5cDz6trrnTnvyfHb4HG3Zv+
-7rqoGsBnqw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_15c1ff37-f43e-42fe-b064-99eb33ccc1e5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7857Ud3ziAxR9rdc0pAYrdCR0h7keutGSl4lU66dkaBf70qZ2xjTrcKFtYin/n9w0np32qxe+Uw7
-zkoHwXmh/g==</DigestValue></Reference></SignedInfo><SignatureValue>Nh9Sl3A6afryofnwNV04hNXYiAlkscyCvZ4sTA0BRd7SmGIuLzCVEodpsJq3XRIkZ7FmT3WDrpZ/
-TXLu5/TKnJJrVfK8lUA+Xqs+5xhr+li/LfP0MBtYzLEy5I1GHUs3FeIguWPyOUrs3ZkJfoZ8ztys
-D6P5Q/Gnb7pOBmsvG0N3hQmnOOgaPh2PGIT1UPgmqYrpxLia6hZRSA9tNI1casnPzEiMG19yvoaS
-GUI1v3GyvMZ9kzZsPWHDs1Sq384GWqn0Bil2GCc+Cihcg97Sjt3LlyqCCaJJel6R4vlqZjOzuE+j
-r3kYkWiHSpHCc0SCFcnTWRLg/OhaCtRl5tTEMw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0b0157db-533e-4fc4-8e1c-0a3ebcee19eb"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qQCRX+cSxeYo1uzcAB941KqvfrVUXgB798c34s5bhetViMJ2x3jOw+j+NhL+bDUOZAzPJog9yGe2
+fpcif1vMZA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_22228cd8-e3cc-49b9-9e8a-fcfec40f49b3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2mW8n1kpo2NNy0bYsa57tJsVL1yBOcfd/JUCY4ayRldhdZpI41I+/dUC6cJgzE1hmO+KAXpF7FsD
+MzhX+O7q/g==</DigestValue></Reference></SignedInfo><SignatureValue>iboQQpgmmK2yAs2UBqAXwZ3foIyglBZVHzcQtXWVVTJu8h7thJaQn05VQHAVaWRn7cyMKwYhWeCn
+sB+54iSJrBXDDZVpl+WwtNpKY2nkaZoEeP/uyAKLK8U+PEv2hc98aLauvR058IhUUe3Ar7Aa+71c
+vMrM6r7GKQVXJ5nVPk0m+9kKwy8zJZhcLjcxYF/IjOIIF51nRlbQEZwpkokBu6O+c0VvNFMailHq
+qsxHMFBxM5ogF5h95bcuEDJgfHKL9eqODJchqtjOehNEgmENqIn/P7QjkvzEpeeImG6IzTcaV4WQ
+DcSB7mPE0XOkVnKboV1cPlVy1r4I2aDO9kiYjg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -381,4 +379,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_15c1ff37-f43e-42fe-b064-99eb33ccc1e5" Target="#_73cc5de2-1fe0-4c83-8dbb-8a26483ab8f5"><Timestamp>2018-09-02 14:46:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_22228cd8-e3cc-49b9-9e8a-fcfec40f49b3" Target="#_0b0157db-533e-4fc4-8e1c-0a3ebcee19eb"><Timestamp>2018-09-07 03:11:37</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
